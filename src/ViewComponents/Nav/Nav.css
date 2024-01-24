@@ -1,0 +1,61 @@
+
+.navBar {
+     display: grid;
+     width: 100%;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 5px;
+     background-color: aqua;
+     border-radius: 0 0 10px 10px;
+
+     animation-name: setNavBar;
+     animation-duration: 1.5s;
+}
+
+@keyframes setNavBar {
+     from {
+          transform: translateY(-60px);
+          opacity: 0.2;
+          border-radius: 0;
+     }
+     70% {
+          transform: translateY(10px);
+          opacity: 0.7;
+     }
+     100% {
+          transform: translateY(0);
+          opacity: 1;
+          border-radius: 0 0 10px 10px;
+     }
+}
+
+.sectionLinks {
+     grid-column-start: 2;
+     display: flex;
+     /* padding: 15px; */
+     gap: 25px;
+     place-self: center;
+}
+
+.sectionLinks a {
+     text-decoration: none;
+     color: black;
+     font-size: 25px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+}
+
+.sectionImage {
+     display: grid;
+     grid-template-columns: repeat( 4, 1fr);
+}
+
+.sectionImage a {
+     place-self: center;
+}
+
+.logoImage{
+     height: 60px;
+     place-self: center;
+     border-radius: 50%;
+}
+/* border-radius: 0 0 20px 20px; */

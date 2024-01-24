@@ -1,0 +1,13 @@
+/* #root {
+  width: 100%;
+} */
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* justify-content: center; */
+}
