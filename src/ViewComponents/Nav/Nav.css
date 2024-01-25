@@ -1,14 +1,40 @@
 
 .navBar {
+     position: sticky;
+     top: 0;
      display: grid;
      width: 100%;
+     height: 20vh;
      grid-template-columns: repeat(2, 1fr);
      padding: 5px;
      background-color: aqua;
      border-radius: 0 0 10px 10px;
 
-     animation-name: setNavBar;
-     animation-duration: 1.5s;
+     animation: setNavBar 1.2s;
+}
+
+.navBarScroll {
+     position: sticky;
+     top: 0;
+     display: grid;
+     width: 100%;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 5px;
+     height: 20vh;
+     background-color: aqua;
+     border-radius: 0 0 10px 10px;
+
+     animation: progressBar auto linear both;
+     animation-timeline: scroll(root);
+     animation-range: 0 300px;
+}
+
+@keyframes progressBar {
+     to {
+          background-color: transparent;
+          /* background-color: blueviolet; */
+          height: 8vh;
+     }
 }
 
 @keyframes setNavBar {

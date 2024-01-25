@@ -1,5 +1,6 @@
 .sectionSkills {
-     background-color: bisque;
+     background-color: rgb(255, 142, 3);
+     width: 80%;
      height: 500px;
      padding: 50px;
 }

@@ -26,13 +26,13 @@ import './SliderProjects.css'
           
           return (
                <main>
-               <button onClick={handleBack} disabled={countImages === 0}> ← </button>
-               <div className="slider">
-               {images.map((image, index) => (
-                    <img key={index} src={image} style={{ transform: `translateX(${(index - countImages) * 100}%)`,}} alt="" />
-               ))}
-               </div>
-               <button onClick={handleNext} disabled={countImages === images.length - 1}> → </button>
+                    <button onClick={handleBack} disabled={countImages === 0}> ← </button>
+                    <div className="sliderManual">
+                    {images.map((image, index) => (
+                         <img key={index} src={image} style={{ transform: `translateX(${(index - countImages) * 100}%)`,}} alt="" />
+                    ))}
+                    </div>
+                    <button onClick={handleNext} disabled={countImages === images.length - 1}> → </button>
                </main>
           )
      }

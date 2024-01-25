@@ -1,5 +1,6 @@
 .sectionProjects {
-     background-color: bisque;
+     background-color: rgb(209, 178, 141);
+     width: 80%;
      height: 500px;
      padding: 50px;
 }

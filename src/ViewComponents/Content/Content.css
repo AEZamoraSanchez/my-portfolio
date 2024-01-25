@@ -1,5 +1,7 @@
 
 .contentPortfolio {
-     display: grid;
-     margin: 40px;
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     align-items: center;
 }

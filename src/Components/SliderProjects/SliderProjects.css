@@ -1,13 +1,13 @@
 
 
-.slider {
+.sliderManual {
      position: relative;
      width: 400px;
      height: 400px;
      overflow: hidden;
    }
    
-   .slider img {
+   .sliderManual img {
      position: absolute;
      width: 100%;
      height: 100%;

@@ -1,0 +1,37 @@
+.sliderContentMajor {
+     width: 100%;
+     height: auto;
+     overflow: hidden;
+}
+
+.sliderContentDivs {
+     display: flex;
+     -webkit-animation: scroll 10s linear infinite;
+     animation: scroll 10s linear infinite;
+     /* width: 1000px; */
+     flex-wrap: nowrap;
+}
+
+.sliderContentDivs:hover {
+     animation-play-state: paused;
+}
+
+.divSlideCarousel {
+     display: flex;
+     width: 400px;
+     height: 400px;
+}
+
+.divSlideCarouselImage {
+     width: 100%;
+}
+@keyframes scroll {
+     0% {
+          -webkit-animation: translateX(0);
+          transform: translateX(0);
+     }
+     100% {
+          -webkit-animation: translateX(calc( -200px * 4));
+          transform: translateX(calc( -200px * 4));
+     }
+}
