@@ -10,6 +10,9 @@
      animation: scroll 10s linear infinite;
      /* width: 1000px; */
      flex-wrap: nowrap;
+     gap: 20px;
+     margin-top: 60px;
+     margin-bottom: 60px;
 }
 
 .sliderContentDivs:hover {
@@ -18,12 +21,25 @@
 
 .divSlideCarousel {
      display: flex;
-     width: 400px;
-     height: 400px;
+
+     /* width: 400px; */
+     aspect-ratio: 1 / 1;
+     background-color: rgb(151, 90, 255);
+     flex-direction: column;
+     border-radius: 10px;
+     transition-duration: 1.5s;
 }
+/* 
+.divSlideCarousel:hover {
+     transform: scale(1.2);
+} */
 
 .divSlideCarouselImage {
-     width: 100%;
+     width: 300px;
+     aspect-ratio: 1 /1;
+     object-fit: cover;
+     border-radius: 10px 10px 0 0;
+
 }
 @keyframes scroll {
      0% {
@@ -31,7 +47,7 @@
           transform: translateX(0);
      }
      100% {
-          -webkit-animation: translateX(calc( -200px * 4));
-          transform: translateX(calc( -200px * 4));
+          -webkit-animation: translateX(calc( -320px * 4));
+          transform: translateX(calc( -320px * 4));
      }
 }

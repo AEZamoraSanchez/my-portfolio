@@ -1,6 +1,51 @@
 .sectionAboutMe {
-     background-color: bisque;
+     /* background-color: bisque; */
      width: 80%;
-     height: 500px;
+     /* height: 400px; */
      padding: 50px;
+     /* padding-top: 0px; */
+     display: grid;
+     grid-template-columns: repeat( 5, 1fr);
+     animation: progressAboutme auto linear both;
+     animation-timeline: scroll(root);
+     animation-range: 0 200px;
+}
+
+@keyframes progressAboutme {
+     to {
+          padding-top: 200px;
+     }
+}
+
+.divDescription {
+     background-color: blueviolet;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     padding: 30px;
+}
+
+.divDescription h2 {
+     font-size: 50px;
+}
+
+.divDescription p {
+     font-size: 20px;
+}
+
+.divImagePerfil {
+     background-color:aquamarine;
+     grid-column-start: 4;
+     grid-column-end: 6;
+     padding: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.profileImage {
+     width: 100%;
+     max-width: 500px;
+     aspect-ratio: 1 /1 ;
+     place-self: center;
+     border-radius: 50%;
 }

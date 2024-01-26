@@ -4,4 +4,14 @@
      flex-direction: column;
      width: 80%;
      align-items: center;
+     margin: 50px;
+     /* animation: progressContent auto linear both;
+     animation-timeline: scroll(root);
+     animation-range: 0 200px; */
 }
+
+/* @keyframes progressContent {
+     to {
+          margin: 200px;
+     }
+} */
