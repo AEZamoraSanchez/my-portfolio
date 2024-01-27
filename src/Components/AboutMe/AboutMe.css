@@ -3,7 +3,7 @@
      width: 80%;
      /* height: 400px; */
      padding: 50px;
-     /* padding-top: 0px; */
+     padding-bottom: 0px;
      display: grid;
      grid-template-columns: repeat( 5, 1fr);
      animation: progressAboutme auto linear both;

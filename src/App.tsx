@@ -4,7 +4,7 @@ import Content from './ViewComponents/Content/Content'
 
 const App = () => {
   return (
-    <main>
+    <main className='mainContentMajor'>
       <Nav/>
       <Content/>      
     </main>

@@ -1,7 +1,9 @@
 import './ModalProject.css'
-
+import { useEffect, useState } from 'react';
+import $ from 'jquery'
 interface Project {
      image: string;
+     handleCloseModal: () => void;
 }
 
 // interface Tecnology {
@@ -15,21 +17,35 @@ interface Project {
 //      tecnologys: Tecnology[]
 // }
 
-const ModalProject = ( { image }  : Project ) => {
-     // const ModalProject = () => {
-          // const image = 'https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg'
+
+
+
+const ModalProject = ( { image, handleCloseModal }  : Project ) => {
+     
+     const [ altura, setAltura ] = useState(0)
+     
+     useEffect(() => {
+          const newAltura = $('.mainContentMajor').height();
+          newAltura && setAltura(newAltura);
+     }, [])
+
+     const stopPropagation = ( e : MouseEvent<HTMLDivElement> ) => {
+          e.stopPropagation();
+     };     
+
      return (
           <>
-               <button> Abrir Modal </button>
-               <div className="modal-container">
-                    <div className="modal-content">
+               <div onClick = { handleCloseModal } style={{ height: altura }} className="modal-container">
+                    <div onClick={ stopPropagation } className="modal-content">
                          <img src={ image } alt="" />
-                         <h2> Titulo del proyecto</h2>
-                         <p>  
-                              Descripcion del proyecto
-                              Descripcion del proyecto
-                         </p>
-                         <button> cerrar modal</button>
+                         <div className='modal-content-data'>
+                              <h2> Titulo del proyecto</h2>
+                              <p>  
+                                   Descripcion del proyecto
+                                   Descripcion del proyecto
+                              </p>
+                              <button onClick={ handleCloseModal }> cerrar modal</button>
+                         </div>
                     </div>
                </div>
           </>

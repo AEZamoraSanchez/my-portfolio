@@ -34,14 +34,18 @@ const InfiniteCarousel = () => {
           )
      })
 
-     const [openModal, setOpenModal] = useState(new Array(images.length).fill(false));
+     const [openModal, setOpenModal] = useState( false );
+     const [ indexImage, setIndexImage] = useState(0)
 
-     const handleOpenModal = (index : number) => {
-     const newSetOpenModal = [...openModal];
-     newSetOpenModal[index] = true;
-     setOpenModal(newSetOpenModal);
-     };
-
+     const handleOpenModal = ( index : number ) => {
+          setOpenModal( true);
+          setIndexImage( index );
+     }
+     
+     const handleCloseModal = () => {
+          setOpenModal( false);
+          setIndexImage( 0 );
+     }
 
      return (
           <section className="sliderContentMajor">
@@ -50,23 +54,19 @@ const InfiniteCarousel = () => {
                          <div onClick={() => handleOpenModal(index)} key={`image-${index}`} className="divSlideCarousel" >
                               <img className='divSlideCarouselImage' src={image} alt="" />
                               <h2> Image: { index }</h2>
-                              {
-                                   openModal[index] &&
-                                   <ModalProject image={image} />
-                              }
                          </div>
                     ))}
                     {images.map((image, index) => (
                          <div onClick={() => handleOpenModal(index)} key={`image-${index + images.length}`} className="divSlideCarousel" >
                               <img className='divSlideCarouselImage' src={image} alt="" />
                               <h2> Image: { index }</h2>
-                              {
-                                   openModal[index] &&
-                                   <ModalProject image={image} />
-                              }
                          </div>
                     ))} 
                </div>
+               {
+                    openModal &&
+                    <ModalProject image={ images[indexImage]} handleCloseModal={ handleCloseModal } />
+               }
           </section>
      )
 }
