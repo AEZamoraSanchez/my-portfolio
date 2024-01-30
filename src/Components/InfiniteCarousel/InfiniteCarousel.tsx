@@ -2,15 +2,11 @@ import './InfiniteCarousel.css'
 import $ from 'jquery';
 import { useEffect, useState } from 'react';
 import ModalProject from '../ModalProject/ModalProject';
+import { projects } from '../../Data/projects';
 
 const InfiniteCarousel = () => {
 
-     const images = [ 
-          'https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg', 
-          'https://img.freepik.com/foto-gratis/resumen-bombilla-creativa-sobre-fondo-azul-brillante-ia-generativa_188544-8090.jpg', 
-          'https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg',
-          'https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg'
-     ]
+
      useEffect(() => {
           let timeOutHover : number ;
 
@@ -35,37 +31,37 @@ const InfiniteCarousel = () => {
      })
 
      const [openModal, setOpenModal] = useState( false );
-     const [ indexImage, setIndexImage] = useState(0)
+     const [ indexProject, setIndexProject] = useState(0)
 
      const handleOpenModal = ( index : number ) => {
           setOpenModal( true);
-          setIndexImage( index );
+          setIndexProject( index );
      }
      
      const handleCloseModal = () => {
           setOpenModal( false);
-          setIndexImage( 0 );
+          setIndexProject( 0 );
      }
 
      return (
           <section className="sliderContentMajor">
                <div className="sliderContentDivs">
-                    {images.map((image, index) => (
+                    {projects.map((project, index) => (
                          <div onClick={() => handleOpenModal(index)} key={`image-${index}`} className="divSlideCarousel" >
-                              <img className='divSlideCarouselImage' src={image} alt="" />
-                              <h2> Image: { index }</h2>
+                              <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
+                              <h2 style={{ fontSize: '30px', margin: '20px 0', textAlign: 'center' }}>{ project.name }</h2>
                          </div>
                     ))}
-                    {images.map((image, index) => (
-                         <div onClick={() => handleOpenModal(index)} key={`image-${index + images.length}`} className="divSlideCarousel" >
-                              <img className='divSlideCarouselImage' src={image} alt="" />
-                              <h2> Image: { index }</h2>
+                    {projects.map((project, index) => (
+                         <div onClick={() => handleOpenModal(index)} key={`image-${index + project.images.length}`} className="divSlideCarousel" >
+                              <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
+                              <h2 style={{ fontSize: '30px', margin: '20px 0', textAlign: 'center' }}> { project.name }</h2>
                          </div>
                     ))} 
                </div>
                {
                     openModal &&
-                    <ModalProject image={ images[indexImage]} handleCloseModal={ handleCloseModal } />
+                    <ModalProject project={ projects[indexProject]} handleCloseModal={ handleCloseModal } />
                }
           </section>
      )

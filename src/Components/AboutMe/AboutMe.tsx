@@ -3,9 +3,10 @@ const AboutMe = () => {
      return (
           <section className='sectionAboutMe' id="aboutMe" >
                <div className='divDescription'>
-                    <h2>titulo acerca de esto</h2>
+                    <h1>Angel Eduardo Zamora Sanchez.</h1>
+                    <h2>Full-Stack Web Developer </h2>
                     <p>
-                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quidem, corporis iure ipsum perferendis modi ad numquam possimus atque dolore, tempora blanditiis? Facilis atque quasi veritatis doloribus maxime nam quidem!
+                    Desarrollador Full-Stack con una sólida formación en tecnologías clave para el desarrollo web. Mi experiencia incluye la creación de aplicaciones web de alto rendimiento utilizando tecnologías como JavaScript, TypeScript, React, NEXT.js y Redux en el lado del front-end. También estoy familiarizado con Zustand para la gestión de estados y Sass para el manejo de estilos. Además, cuento con experiencia en el desarrollo de servidores y API con Node.js en el lado del back-end.
                     </p>
                </div>
                <div className='divImagePerfil'>

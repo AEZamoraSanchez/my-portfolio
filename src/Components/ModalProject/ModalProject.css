@@ -10,30 +10,119 @@
      align-items: center;
      background-color: rgba(79, 79, 79, 0.6);
      z-index: 1;
+     /* animation: modalCreciente .5s; */
 }
 
 .modal-content {
      position: fixed;
-     top: 25px;
+     top: 3%;
      width: 50%;
      max-width: 850px;
-     height: 87vh;
+     height: 94vh;
      /* padding: 20px; */
      border-radius: 15px;
      background-color: rgb(102, 184, 255);
      z-index: 10;
+     animation: modalCreciente 1s;
+     /* animation-delay: .5s; */
 
 }
 
-.modal-content img {
+@keyframes modalCreciente {
+     0% {
+          scale: 0.1
+     }
+     100% {
+          scale: 1
+     }
+}
+
+/* .modal-content img {
      width: 100%;
      aspect-ratio: 16 /9 ;
      object-fit: cover;
      border-radius: 15px 15px 0 0;
-}
+} */
 
 .modal-content-data {
+     display: grid;
+     height: 45%;
+     grid-template-columns: repeat( 3, 1fr);
+     /* grid-template-rows: 25% repeat( 2, 1fr ) ; */
+     /* padding: 20px; */
+}
+
+.modal-content-data h2 {
+     grid-column-start: 1;
+     grid-column-end: 3;
+     padding: 5px 15px;
+     align-self: center;
+     font-size: 35px;
+     margin: 0;
+}
+
+.modal-content-data p {
+     grid-column-start: 1;
+     grid-column-end: -1;
+     margin: 0;
+     padding: 5px 15px;
+     font-size: 18px;
+}
+
+.tecnologiesUsed {
+     grid-column-start: 1;
+     grid-column-end: -1;
+     /* width: 100%; */
      display: flex;
      flex-direction: column;
-     padding: 20px;
+     padding: 5px 15px;
 }
+
+.tecnologiesUsed h3 {
+     font-size: 20px;
+     margin: 0;
+}
+
+.allTecnologiesContent {
+     display: flex;
+     padding: 10px;
+     padding-bottom: 0;
+     gap: 10px;
+
+}
+
+.divTecnology {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 80px;
+     height: 80px;
+     padding: 5px 0;
+}
+.modal-content-data-github {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+}
+
+.modal-content-data-github a {
+     grid-column-start: 2;
+     place-self: center;
+     text-decoration: none;
+}
+
+.devicon-github-original {
+     font-size: 70px;
+     color: white;
+     place-self: center;
+     height: fit-content;
+}
+
+.divTecnology i {
+     font-size: 40px;
+     color: white;
+}
+.divTecnology p {
+     font-size: 20px;
+}
+

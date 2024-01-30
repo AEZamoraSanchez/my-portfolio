@@ -1,6 +1,6 @@
 .sectionAboutMe {
      /* background-color: bisque; */
-     width: 80%;
+     width: 100%;
      /* height: 400px; */
      padding: 50px;
      padding-bottom: 0px;
@@ -18,22 +18,31 @@
 }
 
 .divDescription {
-     background-color: blueviolet;
+     /* background-color: blueviolet; */
      grid-column-start: 1;
      grid-column-end: 4;
      padding: 30px;
+     padding-left: 0;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+}
+.divDescription h1 {
+     font-size: 40px;
+     margin: 0;
 }
 
 .divDescription h2 {
-     font-size: 50px;
+     font-size: 30px;
+     margin: 0;
 }
 
 .divDescription p {
-     font-size: 20px;
+     font-size: 23px;
 }
 
 .divImagePerfil {
-     background-color:aquamarine;
+     /* background-color:aquamarine; */
      grid-column-start: 4;
      grid-column-end: 6;
      padding: 10px;

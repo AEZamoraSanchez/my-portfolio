@@ -4,6 +4,7 @@
      overflow: hidden;
 }
 
+
 .sliderContentDivs {
      display: flex;
      -webkit-animation: scroll 10s linear infinite;
