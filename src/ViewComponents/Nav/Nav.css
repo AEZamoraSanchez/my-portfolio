@@ -7,7 +7,7 @@
      height: 20vh;
      grid-template-columns: repeat(2, 1fr);
      padding: 5px;
-     background-color: aqua;
+     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246));
      border-radius: 0 0 10px 10px;
 
      animation: setNavBar 1.2s;
@@ -21,19 +21,21 @@
      grid-template-columns: repeat(2, 1fr);
      padding: 5px;
      height: 20vh;
-     background-color: aqua;
+     /* background: linear-gradient(rgba(0, 0, 0, 0), #3498db); */
+     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246));
      border-radius: 0 0 10px 10px;
+     z-index: 1;
 
      animation: progressBar auto linear both;
      animation-timeline: scroll(root);
-     animation-range: 0 200px;
+     animation-range: 0 300px;
 }
 
 @keyframes progressBar {
      to {
-          background-color: transparent;
-          /* background-color: blueviolet; */
-          height: 8vh;
+          height: 7vh;
+          /* background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246)); */
+          
      }
 }
 
@@ -65,9 +67,19 @@
 .sectionLinks a {
      text-decoration: none;
      color: black;
-     font-size: 25px;
-     padding-top: 15px;
-     padding-bottom: 15px;
+     font-size: 35px;
+     /* padding-top: 15px;
+     padding-bottom: 15px; */
+
+     animation: progressA auto linear both;
+     animation-timeline: scroll(root);
+     animation-range: 0 200px;
+}
+
+@keyframes progressA {
+     to {
+          font-size: 25px;
+     }
 }
 
 .sectionImage {
@@ -77,7 +89,10 @@
 
 .sectionImage a {
      place-self: center;
+     opacity: 1;
+
 }
+
 
 .logoImage{
      height: 60px;

@@ -34,7 +34,7 @@ const ModalProject = ( { project, handleCloseModal }  : DataModalProject ) => {
                          <div className='modal-content-data'>
                               <h2>{ project.name }</h2>
                               <div className='modal-content-data-github'>
-                              <a href="">
+                              <a href={project.github} target="_blank">
                                    <i className="devicon-github-original"></i>
                               </a>
                               </div>

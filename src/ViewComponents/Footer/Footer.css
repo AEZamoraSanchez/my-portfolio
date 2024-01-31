@@ -1,0 +1,30 @@
+.footerSection {
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     padding: 10px 30px;
+     padding-top: 5px;
+     width: 100%;
+     display: flex;
+     justify-content: end;
+     gap: 15px;
+     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(106, 50, 141), rgb(106, 50, 141), rgba(0, 0, 0, 0));
+}
+
+.footerSection i {
+     font-size: 70px;
+     color: white;
+     transition-duration: .5s;
+}
+
+.footerSection a:hover {
+     transform: scale(1.2);
+     cursor: pointer;
+     transition-duration: 1s;
+}
+
+.emailIcon {
+     font-size: 70px;
+     color: white;
+     transition-duration: .5s;
+}

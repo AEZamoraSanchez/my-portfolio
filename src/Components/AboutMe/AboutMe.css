@@ -28,17 +28,21 @@
      flex-direction: column;
 }
 .divDescription h1 {
-     font-size: 40px;
+     font-size: 45px;
      margin: 0;
+     color: rgb(241, 221, 255);
 }
 
 .divDescription h2 {
      font-size: 30px;
      margin: 0;
+     color: rgb(200, 132, 248)
+
 }
 
 .divDescription p {
      font-size: 23px;
+     color: rgb(234, 205, 255);
 }
 
 .divImagePerfil {

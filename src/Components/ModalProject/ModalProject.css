@@ -21,8 +21,7 @@
      height: 94vh;
      /* padding: 20px; */
      border-radius: 15px;
-     background-color: rgb(102, 184, 255);
-     z-index: 10;
+     background: linear-gradient(to right, rgb(66, 9, 106), rgb(132, 30, 199));     z-index: 10;
      animation: modalCreciente 1s;
      /* animation-delay: .5s; */
 

@@ -25,15 +25,15 @@
 
      /* width: 400px; */
      aspect-ratio: 1 / 1;
-     background-color: rgb(151, 90, 255);
+     background-color:  rgb(109, 6, 182);
      flex-direction: column;
      border-radius: 10px;
      transition-duration: 1.5s;
 }
-/* 
-.divSlideCarousel:hover {
-     transform: scale(1.2);
-} */
+
+.divSlideCarousel h2 {
+     /* color: rgb(241, 221, 255); */
+}
 
 .divSlideCarouselImage {
      width: 300px;

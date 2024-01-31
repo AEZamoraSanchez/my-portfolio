@@ -100,7 +100,7 @@ export const projects : Project[] = [
           id: 1,
           name: 'Pokemon Rest API',
           description: 'Aplicación web que utiliza React para mostrar información de Pokémon desde una API. Además, los usuarios pueden crear su propio Pokémon personalizado.',
-          imageMain: 'https://i.ebayimg.com/images/g/jqkAAOSwL~hbLtr3/s-l1200.webp',
+          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1706656463/fapklp3bv2llu6xmuz8f.webp',
           images: [
                'https://i.ebayimg.com/images/g/jqkAAOSwL~hbLtr3/s-l1200.webp', 
                'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/04/eevee-pokemon-go.jpg?tf=3840x', 
@@ -179,8 +179,8 @@ export const projects : Project[] = [
                     name: 'Tailwind',
                     class: tecnologiesIKnow.tailwind.class
                }
-          ]
-          // github: 'https://github.com/username_0/pokemon-rest-api',
+          ],
+          github: 'https://github.com/AEZamoraSanchez/Translate.git',
           // deployed: 'https://pokemon-rest-api.herokuapp.com/'
      },
      {
@@ -226,8 +226,8 @@ export const projects : Project[] = [
                     name: 'Figma',
                     class: tecnologiesIKnow.figma.class
                }
-          ]
-          // github: 'https://github.com/username_0/pokemon-rest-api',
+          ],
+          github: 'https://github.com/The-fourth-elements/The-fourth-Element-CLIENT.git',
           // deployed: 'https://pokemon-rest-api.herokuapp.com/'
      },
      {
