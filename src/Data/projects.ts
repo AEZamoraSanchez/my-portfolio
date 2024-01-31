@@ -187,12 +187,12 @@ export const projects : Project[] = [
           id: 3,
           name: 'The Fourth Element',
           description: 'Aplicacion web hecha con NEXTjs/React para Estanislao Bachrach para mostrar cursos en video y medir el progreso de los usuarios a través de cuestionarios',
-          imageMain: 'https://img.freepik.com/foto-gratis/resumen-bombilla-creativa-sobre-fondo-azul-brillante-ia-generativa_188544-8090.jpg',
+          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1706677472/qmzhc7bftzj9aspfqsti.png',
           images: [
-               'https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg', 
-               'https://img.freepik.com/foto-gratis/resumen-bombilla-creativa-sobre-fondo-azul-brillante-ia-generativa_188544-8090.jpg', 
-               'https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg',
-               'https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg'
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1706675571/jnxzvnxa1yq0bepiqume.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1706678296/rjfqzm1w1wfsdrkhav9d.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1706676269/fppkj4zygqiypun5lqge.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1706678511/th0tyiovowf0tsaeuy2l.png'
           ], 
           tecnologies: [
                {
