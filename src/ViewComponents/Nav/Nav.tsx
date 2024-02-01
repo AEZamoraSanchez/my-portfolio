@@ -14,12 +14,10 @@ const Nav = () => {
 
      return (
                <nav id='nav'>
-                    <div className='sectionImage'>
-                         <a href="#aboutMe">
+                         <a className='logoContent' href="#aboutMe">
                               <img className='logoImage' src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
                          </a>
                          
-                    </div>
 
 
                     <div className='sectionLinks'>
@@ -27,7 +25,7 @@ const Nav = () => {
 
                          <a href="#projects">Projects</a>
                               
-                         <a href="#workExperience">Work Experience</a>     
+                         <a href="#workExperience">Experience</a>     
                               
                          <a href="#skills">Skills</a>
                     </div>

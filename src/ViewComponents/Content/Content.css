@@ -2,16 +2,8 @@
 .contentPortfolio {
      display: flex;
      flex-direction: column;
-     width: 80%;
+     width: 100%;
      align-items: center;
-     margin: 50px;
-     /* animation: progressContent auto linear both;
-     animation-timeline: scroll(root);
-     animation-range: 0 200px; */
+     margin: 0;
+     /* margin: 50px; */
 }
-
-/* @keyframes progressContent {
-     to {
-          margin: 200px;
-     }
-} */
