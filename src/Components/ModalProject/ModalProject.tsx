@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import $ from 'jquery'
 import SliderProjects from '../SliderProjects/SliderProjects';
 import { Project  } from '../../Data/projects';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'; 
+
 interface DataModalProject {
      project: Project
      handleCloseModal: () => void;
@@ -30,6 +33,7 @@ const ModalProject = ( { project, handleCloseModal }  : DataModalProject ) => {
           <>
                <div onClick = { handleCloseModal } style={{ height: altura }} className="modal-container">
                     <div onClick={ stopPropagation } className="modal-content">
+                         <FontAwesomeIcon icon={ faCircleXmark } className='closeButton' onClick={ handleCloseModal }/>
                          <SliderProjects images={ project.images } />
                          <div className='modal-content-data'>
                               <h2>{ project.name }</h2>
