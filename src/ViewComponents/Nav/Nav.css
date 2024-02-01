@@ -41,15 +41,18 @@
 
 @keyframes setNavBar {
      from {
+          -webkit-animation: translateY(-60px);
           transform: translateY(-60px);
           opacity: 0.2;
           border-radius: 0;
      }
      70% {
+          -webkit-animation: translateY(10px);
           transform: translateY(10px);
           opacity: 0.7;
      }
      100% {
+          -webkit-animation: translateY(0);
           transform: translateY(0);
           opacity: 1;
           border-radius: 0 0 10px 10px;
