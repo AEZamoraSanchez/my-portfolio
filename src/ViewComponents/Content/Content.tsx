@@ -9,8 +9,8 @@ const Content = () => {
           <section className="contentPortfolio">
                <AboutMe/>
                <Projects/>
-               {/* <WorkExp/> */}
-               {/* <Skills/> */}
+               <WorkExp/>
+               <Skills/>
           </section>
      )
 }
