@@ -10,6 +10,8 @@
      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246));
      border-radius: 0 0 10px 10px;
      align-items: center;
+     justify-content: space-between;
+
 
      animation: setNavBar 1.2s;
 }
@@ -21,21 +23,26 @@
      display: flex;
      width: 100%;
      padding: 5px;
-     height: 20vh;
+     height: 10vh;
      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246));
      border-radius: 0 0 10px 10px;
      z-index: 1;
      align-items: center;
      justify-content: space-between;
 
-     animation: progressBar auto linear both;
-     animation-timeline: scroll(root);
-     animation-range: 0 300px;
+     @media (min-width: 900px) {
+          height: 20vh;
+          animation: progressBar auto linear both;
+          animation-timeline: scroll(root);
+          animation-range: 0 300px;
+     }
 }
 
-@keyframes progressBar {
-     to {
-          height: 10vh;
+@media (min-width:900px) {
+     @keyframes progressBar {
+          to {
+               height: 10vh;
+          }
      }
 }
 
@@ -86,11 +93,11 @@
 .sectionLinks a {
      text-decoration: none;
      color: rgb(255, 255, 255);
-     font-size: 18px;
+     font-size: 17px;
      width: fit-content;
 
      @media (min-width: 550px) {
-          font-size: 22px;
+          font-size: 20px;
      }
 
      @media (min-width: 900px) {
@@ -104,21 +111,25 @@
      animation: progressA auto linear both;
      animation-timeline: scroll(root);
      animation-range: 0 200px;
-}
 
-@keyframes progressA {
-     to {
-          font-size: 17px;
+     &:hover {
+          cursor: pointer;
      }
 }
 
+/* @keyframes progressA {
+     to {
+          font-size: 17px;
+     }
+} */
+/* 
 @media ( min-width: 550px ) {
      @keyframes progressA {
           to {
                font-size: 20px;          
           }
      }
-}
+} */
 
 @media ( min-width: 900px ) {
      @keyframes progressA {
@@ -137,44 +148,45 @@
 }
 
 .logoContent {
-     padding: 0 10px;
+     margin-left: 15px;
+     border-radius: 50%;
      @media ( min-width: 900px ) {
-          padding: 0 20px;
+          margin-left: 30px;
      }
      @media ( min-width: 1250px ) {
-          padding: 0 30px;
+          margin-left: 40px;
      }
 }
 
 
 .logoImage{
-     height: 60px;
-     margin-left: 10px;
+     height: 9vh;
+     /* margin-left: 10px; */
      border-radius: 50%;
 
      @media ( min-width: 900px ) {
-          height: 85px;
+          height: 16vh;
      }
      
      @media ( min-width: 1250px ) {
-          height: 100px;
+          height: 17vh;
      }
 
      animation: progressLogoImage auto linear both;
      animation-timeline: scroll(root);
      animation-range: 0 200px;
 }
-
+/* 
 @keyframes progressLogoImage {
      to {
           height: 40px;
      }
-}
+} */
 
 @media ( min-width: 900px ) {
      @keyframes progressLogoImage {
           to {
-               height: 55px;
+               height: 9vh;
           }
      }
 }
@@ -182,7 +194,7 @@
 @media ( min-width: 1250px ) {
      @keyframes progressLogoImage {
           to {
-               height: 60px;
+               height: 9vh;
           }
      }
 }

@@ -12,22 +12,28 @@ const Nav = () => {
            }, 1500);
      })
 
+     const scrollToComponent = (componentId : string ) => {
+          const component = document.getElementById(componentId);
+      
+          if (component) {
+            component.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        };
+
      return (
                <nav id='nav'>
                          <a className='logoContent' href="#aboutMe">
                               <img className='logoImage' src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
                          </a>
                          
-
-
                     <div className='sectionLinks'>
-                         <a href="#aboutMe">About me</a>
+                         <a onClick={ () => scrollToComponent('aboutMe')}>About me</a>
 
-                         <a href="#projects">Projects</a>
+                         <a onClick={ () => scrollToComponent('projects')}>Projects</a>
                               
-                         <a href="#workExperience">Experience</a>     
+                         <a onClick={ () => scrollToComponent('workExperience')}>Experience</a>     
                               
-                         <a href="#skills">Skills</a>
+                         <a onClick={ () => scrollToComponent('skills')}>Skills</a>
                     </div>
                </nav>
      )

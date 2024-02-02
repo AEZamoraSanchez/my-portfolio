@@ -1,7 +1,18 @@
 .sectionWorkExp {
-     width: 90%;
+     width: 100%;
      display: flex;
      flex-direction: column;
+     padding: 10px 0;
+     /* justify-content: center;
+     align-items: center; */
+
+     @media ( min-width: 900px ) {
+          padding-top: 30px;
+     }
+
+     @media ( min-width: 1250px ) {
+          padding-top: 45px;
+     }
 }
 /* style={{ fontSize: '35px', margin: '0', color: 'rgb(241, 221, 255)' }}> */
 
@@ -9,26 +20,33 @@
      font-size: 32px;
      /* margin: 15px; */
      color: rgb(241, 221, 255);
-
+     margin: 15px;
      @media (min-width: 550px) {
           font-size: 35px;
+     }
+     
+     @media (min-width: 900px) {
+          margin-left: 5vw;
      }
 }
 
 /* style={{ padding: '50px 0', display:'grid', gridTemplateColumns: 'repeat(3, 1fr)' }} */
 .divInfoExperience {
-     padding: 20px 15px;
+     padding: 30px 0px;
+     width: 90%;
      display: grid;
+     align-self: center;
      /* padding: 0 35px; */
-
+     
      @media (min-width: 850px) {
           grid-template-columns: repeat(3, 1fr);
-          padding: 50px 15px;
+          padding: 40px 0;          
      }
 }
 
 .divInfoExperience img {
      width: 90%;
+     max-width: 380px;
      padding: 20px 0;
 
      /* max-width: 350px; */

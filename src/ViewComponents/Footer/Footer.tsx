@@ -4,7 +4,8 @@ import "./Footer.css"
 
 const Footer = () => {
      return (
-          <section className="footerSection">
+          <footer className="footerSection">
+               <div>
                <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank">
                     <i className="devicon-linkedin-plain"></i>
                </a>
@@ -14,7 +15,8 @@ const Footer = () => {
                <a href="">
                     <FontAwesomeIcon icon={faEnvelope} className="emailIcon"/>               
                </a>
-          </section>
+               </div>
+          </footer>
      )
 }
 

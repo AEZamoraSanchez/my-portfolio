@@ -2,19 +2,41 @@
      position: fixed;
      bottom: 0;
      right: 0;
-     padding: 10px 30px;
-     padding-top: 5px;
      width: 100%;
      display: flex;
-     justify-content: end;
-     gap: 15px;
-     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(106, 50, 141), rgb(106, 50, 141), rgba(0, 0, 0, 0));
+     justify-content: end;     
+}
+
+.footerSection div {
+     display: flex;
+     gap: 7px;
+     justify-items: center;
+     align-items: center;
+     padding: 10px 25px;
+     padding-top: 5px;
+     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(95, 33, 134), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(95, 33, 134), rgba(0, 0, 0, 0));
+
+     @media (min-width: 550px) {
+          gap: 10px;
+     }
 }
 
 .footerSection i {
-     font-size: 70px;
+     font-size: 50px;
      color: white;
      transition-duration: .5s;
+
+     @media (min-width: 550px) {
+          font-size: 55px;
+     }
+
+     @media (min-width: 900px) {
+          font-size: 65px;
+     }
+
+     @media (min-width: 1200px) {
+          font-size: 75px;
+     }
 }
 
 .footerSection a:hover {
@@ -24,7 +46,19 @@
 }
 
 .emailIcon {
-     font-size: 70px;
+     font-size: 50px;
      color: white;
      transition-duration: .5s;
+
+     @media (min-width: 550px) {
+          font-size: 55px;
+     }
+
+     @media (min-width: 900px) {
+          font-size: 65px;
+     }
+
+     @media (min-width: 1200px) {
+          font-size: 75px;
+     }
 }
