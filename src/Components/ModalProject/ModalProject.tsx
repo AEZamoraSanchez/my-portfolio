@@ -4,7 +4,7 @@ import $ from 'jquery'
 import SliderProjects from '../SliderProjects/SliderProjects';
 import { Project  } from '../../Data/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'; 
+import { faCircleXmark, faLink } from '@fortawesome/free-solid-svg-icons'; 
 
 interface DataModalProject {
      project: Project
@@ -36,11 +36,16 @@ const ModalProject = ( { project, handleCloseModal }  : DataModalProject ) => {
                          <FontAwesomeIcon icon={ faCircleXmark } className='closeButton' onClick={ handleCloseModal }/>
                          <SliderProjects images={ project.images } />
                          <div className='modal-content-data'>
-                              <h2>{ project.name }</h2>
                               <div className='modal-content-data-github'>
-                              <a href={project.github} target="_blank">
-                                   <i className="devicon-github-original"></i>
-                              </a>
+                              <h2>{ project.name }</h2>
+                              <div className='links-content-modal'>
+                                   <a href="" target="_blank">
+                                        <FontAwesomeIcon className='link-icon' icon={ faLink } />
+                                   </a>
+                                   <a href={project.github} target="_blank">
+                                        <i className="devicon-github-original"></i>
+                                   </a>
+                              </div>
                               </div>
                               <p> { project.description  }</p>
                               <div className='tecnologiesUsed'>

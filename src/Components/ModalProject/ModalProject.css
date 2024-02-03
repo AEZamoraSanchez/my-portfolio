@@ -18,15 +18,15 @@
      top: 3%;
      width: 90%;
      max-width: 850px;
-     height: 97vh;
+     height: 94vh;
      border-radius: 15px;
      background: linear-gradient(to right, rgb(66, 9, 106), rgb(132, 30, 199));     z-index: 10;
      animation: modalCreciente 1s;
      /* animation-delay: .5s; */
-
+/* 
      @media (min-width: 550px) {
           height: 94vh;
-     }
+     } */
 
 }
 
@@ -56,41 +56,26 @@
      }
 }
 
+/* .modal-contentSlider {
+
+} */
+
 .modal-content-data {
-     display: grid;
+     display: flex;
+     flex-direction: column;
      width: 100%;
      height: 47vh;
-     overflow: auto;
-     grid-template-columns: repeat( 3, minmax(110px, 1fr));
-}
-
-.modal-content-data h2 {
-     grid-column-start: 1;
-     grid-column-end: 3;
-     padding: 5px 15px;
-     align-self: center;
-     font-size: 20px;
-     margin: 0;
-
-     @media (min-width: 550px) {
-          font-size: 30px;
-     }
-
-     @media (min-width: 800px) {
-          font-size: 35px;
-          padding: 15px 20px;
-     }
-
+     overflow-y: auto;
+     -webkit-overflow-scrolling: touch;
+     overscroll-behavior: contain; /* Para dispositivos Android */
 }
 
 .modal-content-data p {
-     grid-column-start: 1;
-     grid-column-end: -1;
      margin: 0;
      padding: 10px 15px;
-     font-size: 16px;
+     font-size: 2.5vh;
 
-     @media (min-width: 550px) {
+     /* @media (min-width: 550px) {
           font-size: 18px;
           padding: 5px 15px;
      }
@@ -98,7 +83,7 @@
      @media (min-width: 800px) {
           font-size: 20px;
           padding: 10px 20px;
-     }
+     } */
 
      @media (min-width: 1250px) {
           font-size: 22px;
@@ -106,12 +91,9 @@
 }
 
 .tecnologiesUsed {
-     grid-column-start: 1;
-     grid-column-end: -1;
-     /* width: 100%; */
      display: flex;
      flex-direction: column;
-     padding: 5px 15px;
+     padding: 5px 10px;
 
      @media (min-width: 550px) {
           margin-top: 10px;
@@ -120,16 +102,17 @@
 }
 
 .tecnologiesUsed h3 {
-     font-size: 15px;
+     font-size: 2.7vh;
      margin: 0;
+     margin-bottom: 1vh;
 
      @media (min-width: 550px) {
-          font-size: 20px;
+          font-size: 3.2vh;
      }
      
-     @media (min-width: 1250px) {
+     /* @media (min-width: 1250px) {
           font-size: 25px;
-     }
+     } */
 }
 
 .allTecnologiesContent {
@@ -138,11 +121,11 @@
      flex-wrap: wrap;
      padding-top: 10px;
      gap: 5px;
-
+     
      @media (min-width: 800px) {
           gap: 15px;
      }
-
+     
 }
 
 .divTecnology {
@@ -150,47 +133,69 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     width: 67px;
+     /* background-color: bisque; */
+     /* width: 67px; */
+     /* aspect-ratio: 1 / 1 ; */
+     /* height: 9vh; */
+     height: fit-content;
      padding: 0;
 }
+
 .modal-content-data-github {
      display: flex;
-     justify-items: end;
-     justify-content: end;
+     /* justify-items: ; */
+     justify-content: space-between ;
+     padding: 10px;
+     padding-right: 20px;
+}
+
+.modal-content-data-github h2 {
+     /* padding: 5px 10px; */
+     align-self: center;
+     font-size: 3.2vh;
+     margin: 0;
+
+     @media (min-width: 550px) {
+          font-size: 4vh;
+     }
+
 }
 
 .modal-content-data-github a {
      text-decoration: none;
-     margin: 5px 15px 0 0;
 
-     @media (min-width: 550px) {
-          margin: 5px 15px 0 0;
-     }
-
-     @media (min-width: 1250px) {
-          margin: 10px 20px 0 0;
-     }
 }
 
 .devicon-github-original {
-     font-size: 50px;
+     font-size: 11vw;
      color: white;
      height: fit-content;
 
-     @media (min-width: 550px) {
+     @media (min-width: 700px) {
           font-size: 60px;
-     }
-     @media (min-width: 800px) {
-          font-size: 75px;
      }
 }
 
+.links-content-modal {
+     display: flex;
+     gap: 10px;
+}
+
 .divTecnology i {
-     font-size: 22px;
+     font-size: 5vh;
      color: white;
 
-     @media (min-width: 800px) {
+     /* @media (min-width: 800px) {
           font-size: 40px;
+     } */
+}
+
+.link-icon {
+     font-size: 10vw;
+     color: white;
+
+     @media (min-width: 700px) {
+          font-size: 55px;
      }
 }
 .divTecnology p {
@@ -198,7 +203,7 @@
      padding: 5px 10px;
 
      @media (min-width: 800px) {
-          font-size: 20px;
+          font-size: 25px;
      }
 }
 
