@@ -7,18 +7,43 @@
      justify-content: end;     
 }
 
-.footerSection div {
+.footerSection section {
+     display: flex;
+     flex-direction: column;
+     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(95, 33, 134), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(95, 33, 134), rgba(0, 0, 0, 0));
+}
+
+.redirect-links {
      display: flex;
      gap: 7px;
      justify-items: center;
      align-items: center;
      padding: 10px 25px;
      padding-top: 5px;
-     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(95, 33, 134), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(95, 33, 134), rgba(0, 0, 0, 0));
+     
 
      @media (min-width: 550px) {
           gap: 10px;
      }
+}
+
+.email-copy-div {
+     display: flex;
+     gap: 5px;
+     justify-items: center;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding-right: 30px;
+}
+
+
+.email-copy-div input {
+     border: none;
+     background: none;
+     color: white;
+     /* font-weight: bold; */
+     width: 38vw;
 }
 
 .footerSection i {
@@ -45,8 +70,12 @@
      transition-duration: 1s;
 }
 
+.footerSection a {
+     text-decoration: none;
+}
+
 .emailIcon {
-     font-size: 50px;
+     font-size: 20px;
      color: white;
      transition-duration: .5s;
 
@@ -60,5 +89,23 @@
 
      @media (min-width: 1200px) {
           font-size: 75px;
+     }
+}
+
+.fileIcon {
+     font-size: 50px;
+     color: white;
+     transition-duration: .5s;
+
+     @media (min-width: 550px) {
+          font-size: 55px;
+     }
+
+     @media (min-width: 900px) {
+          font-size: 65px;
+     }
+
+     @media (min-width: 1200px) {
+          font-size: 70px;
      }
 }

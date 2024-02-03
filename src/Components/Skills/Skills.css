@@ -24,7 +24,7 @@
 .tecnologies-content {
      display: flex;
      gap: 10px;
-     width: 100%;
+     width: 90%;
      flex-wrap: wrap;
      padding: 40px 0;
      justify-content: center;
