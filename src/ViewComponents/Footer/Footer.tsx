@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFile } from "@fortawesome/free-solid-svg-icons"
+import { faFile, faCircleArrowRight, faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons"
 import { faClone } from "@fortawesome/free-regular-svg-icons"
 import { useRef } from "react"
 import { useState } from "react"
@@ -24,7 +24,11 @@ const Footer = () => {
      return (
           <footer className="footerSection">
                <section id="sectionFooter" style={{ transform: `translateX(${translateX})` }}>
-               <button id="openClose" onClick={handleButtonClick}>{rightLeft ? ">" : "<" }</button>
+               {
+                    rightLeft ? <FontAwesomeIcon className="footerSectionOpenClose" icon={faCircleArrowRight} onClick={handleButtonClick}/>
+                    : <FontAwesomeIcon className="footerSectionOpenClose" icon={faCircleArrowLeft} onClick={handleButtonClick}/>
+               }
+               {/* <button id="openClose" onClick={handleButtonClick}>{rightLeft ? ">" : "<" }</button> */}
                     <div className="email-copy-div">
                          <input ref={textRef} value="ang02aezs@gmail.com" readOnly />
                          <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copiar correo" onClick={copyToClipboard}/>               

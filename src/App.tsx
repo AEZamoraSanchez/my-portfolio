@@ -5,11 +5,13 @@ import Footer from './ViewComponents/Footer/Footer'
 
 const App = () => {
   return (
-    <main className='mainContentMajor'>
+    <>
       <Nav/>
-      <Content/> 
+      <main className='mainContentMajor'>
+        <Content/> 
+      </main>
       <Footer/>     
-    </main>
+    </>
   )
 }
 

@@ -17,21 +17,29 @@
      transition-duration: 1s;
 }
 
-.footerSection section button {
+.footerSectionOpenClose {
      border-radius: 100%;
-     border: none;
-     aspect-ratio: 1/1;
-     width: 35px;
+     width: fit-content;
      position: absolute;
-     font-size: 25x;
-     padding: 0;
      left: -40px;
      top: 50%; /* Mueve el botón al centro del div */
      transform: translateY(-50%);
-     font-weight: 1000;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     font-size: 35px;
+     color: rgb(241, 221, 255);
+     cursor: pointer;
+
+     @media (min-width: 540px) {
+          font-size: 40px;
+          left: -50px;
+     }
+
+
+     @media (min-width: 768px) {
+          font-size: 50px;
+          left: -60px;
+     }
+
+
 }
 
 .redirect-links {
