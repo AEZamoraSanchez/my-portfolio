@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFile } from "@fortawesome/free-solid-svg-icons"
 import { faClone } from "@fortawesome/free-regular-svg-icons"
-import { useRef} from "react"
+import { useRef } from "react"
 import "./Footer.css"
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
                          <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copiar correo" onClick={copyToClipboard}/>               
                     </div>
                     <div ref={divRef} className="redirect-links">
-                    <a href="https://drive.google.com/file/d/1znQ28FvEEsW8KRVQ97XHCiCcScM0HAI8/view?usp=drive_link" target="_blank" title="Ver CV">
+                    <a href="https://drive.google.com/file/d/1A-_o0A-GqGAfJ3jkFms9KEdSsK51tgAA/view?usp=sharing" target="_blank" title="Ver CV">
                          <FontAwesomeIcon icon={faFile} className="fileIcon" />               
                     </a>
                     <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="Ir a LinkedIn">

@@ -11,15 +11,18 @@
      display: flex;
      flex-direction: column;
      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(95, 33, 134), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(95, 33, 134), rgba(0, 0, 0, 0));
+     /* background-color: rgba(134, 65, 177, .5); */
+     gap: 5px;
+     padding-left: 15px;
 }
 
 .redirect-links {
      display: flex;
-     gap: 7px;
-     justify-items: center;
-     align-items: center;
-     padding: 10px 25px;
-     padding-top: 5px;
+     gap: 10px;
+     justify-content: end;
+     padding: 0px 15px;
+     align-content: center;
+     /* padding-top: 5px; */
      
 
      @media (min-width: 550px) {
@@ -29,12 +32,8 @@
 
 .email-copy-div {
      display: flex;
-     gap: 5px;
-     justify-items: center;
-     justify-content: center;
-     align-items: center;
      width: 100%;
-     padding-right: 30px;
+     padding-right: 15px;
 }
 
 
@@ -42,70 +41,72 @@
      border: none;
      background: none;
      color: white;
-     /* font-weight: bold; */
-     width: 38vw;
+    font-size: 10px;
+    width: 110px;
+
+    @media (min-width: 550px) {
+         font-size: 15px;
+         width: 160px;
+    }
+
+    @media (min-width: 900px) {
+         font-size: 20px;
+         width: 210px;
+    }
 }
 
-.footerSection i {
-     font-size: 50px;
-     color: white;
-     transition-duration: .5s;
-
-     @media (min-width: 550px) {
-          font-size: 55px;
-     }
-
-     @media (min-width: 900px) {
-          font-size: 65px;
-     }
-
-     @media (min-width: 1200px) {
-          font-size: 75px;
-     }
-}
 
 .footerSection a:hover {
-     transform: scale(1.2);
+     transform: scale(1.1);
      cursor: pointer;
      transition-duration: 1s;
 }
 
 .footerSection a {
      text-decoration: none;
+     height: fit-content;
 }
 
 .emailIcon {
      font-size: 20px;
      color: white;
      transition-duration: .5s;
-
+     cursor: pointer;
+     
      @media (min-width: 550px) {
-          font-size: 55px;
+          font-size: 30px;
      }
-
-     @media (min-width: 900px) {
-          font-size: 65px;
-     }
-
+     
      @media (min-width: 1200px) {
-          font-size: 75px;
+          font-size: 35px;
      }
 }
 
 .fileIcon {
-     font-size: 50px;
+     font-size: 33px;
+     color: white;
+     transition-duration: .5s;
+     
+     @media (min-width: 550px) {
+          font-size: 42px;
+     }
+     
+     @media (min-width: 900px) {
+          font-size: 47px;
+     }
+     
+}
+
+.footerSection i {
+     font-size: 35px;
      color: white;
      transition-duration: .5s;
 
      @media (min-width: 550px) {
-          font-size: 55px;
+          font-size: 45px;
      }
 
      @media (min-width: 900px) {
-          font-size: 65px;
-     }
-
-     @media (min-width: 1200px) {
-          font-size: 70px;
+          font-size: 50px;
      }
 }

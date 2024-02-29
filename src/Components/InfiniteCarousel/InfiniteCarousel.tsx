@@ -58,6 +58,13 @@ const InfiniteCarousel = () => {
                               <h2 className='divSlideCarouselH'>{ project.name }</h2>
                          </div>
                     ))} 
+                    {projects.map((project, index) => (
+                         <div onClick={() => handleOpenModal(index)} key={`image-${index + project.images.length}`} className="divSlideCarousel" >
+                              <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
+                              <h2 className='divSlideCarouselH'>{ project.name }</h2>
+                         </div>
+                    ))} 
+                    
                </div>
                {
                     openModal &&

@@ -44,6 +44,7 @@ export const allTecnologies = [
      "devicon-threejs-original", // Three
 
      "devicon-mongodb-plain-wordmark", // MongoDB
+     "devicon-mysql-original", // MySQL
      "devicon-nestjs-plain", // Nest
      "devicon-nodejs-plain", // Nodejs
      "devicon-postgresql-plain", // postgresql
@@ -54,23 +55,26 @@ export const allTecnologies = [
 ]
 
 export const tecnologiesIKnowToShow = [
-     { name: "CSS", class: "devicon-css3-plain" },
-     { name: "HTML5", class: "devicon-html5-plain" },
-     { name: "TypeScript", class: "devicon-typescript-plain" },
      { name: "JavaScript", class: "devicon-javascript-plain" },
+     { name: "TypeScript", class: "devicon-typescript-plain" },
+     { name: "HTML5", class: "devicon-html5-plain" },
+     { name: "CSS", class: "devicon-css3-plain" },
      { name: "jQuery", class: "devicon-jquery-plain" },
      { name: "React", class: "devicon-react-original" },
-     { name: "AngularJS", class: "devicon-angularjs-plain" },
-     { name: "Nextjs", class: "devicon-nextjs-original" },
+     { name: "Angular", class: "devicon-angularjs-plain" },
+     { name: "Nextjs", class: "devicon-nextjs-plain" },
      { name: "Tailwind", class: "devicon-tailwindcss-plain" },
      { name: "Sass", class: "devicon-sass-original" },
      { name: "Figma", class: "devicon-figma-plain" },
      { name: "GitHub", class: "devicon-github-original" },
      { name: "Git", class: "devicon-git-plain" },
      { name: "Redux", class: "devicon-redux-original" },
-     { name: "Three", class: "devicon-threejs-original" },
-     { name: "Nodejs", class: "devicon-nodejs-plain" },
+     { name: "ThreeJS", class: "devicon-threejs-original" },
+     { name: "Nodejs", class: "devicon-nodejs-plain-wordmark" },
+     { name: "Express", class: "devicon-express-original" },
+     { name: "NestJS", class: "devicon-nestjs-plain" },
      { name: "PostgreSQL", class: "devicon-postgresql-plain" },
+     { name: "MySQL", class: "devicon-mysql-original" },
      { name: "MongoDB", class: "devicon-mongodb-plain-wordmark" },
 ]
 
@@ -96,53 +100,53 @@ export const tecnologiesIKnow = {
 }
 
 export const projects : Project[] = [
-     {
-          id: 1,
-          name: 'Pokemon Rest API',
-          description: 'Aplicación web que utiliza React para mostrar información de Pokémon desde una API. Además, los usuarios pueden crear su propio Pokémon personalizado.',
-          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1706656463/fapklp3bv2llu6xmuz8f.webp',
-          images: [
-               'https://i.ebayimg.com/images/g/jqkAAOSwL~hbLtr3/s-l1200.webp', 
-               'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/04/eevee-pokemon-go.jpg?tf=3840x', 
-               'https://static0.gamerantimages.com/wordpress/wp-content/uploads/Pokemon-Eevee.jpg',
-               'https://http2.mlstatic.com/D_NQ_NP_817145-MLU72637628411_112023-O.webp'
-          ], 
-          tecnologies: [
-               {
-                    name: 'HTML',
-                    class: tecnologiesIKnow.html.class
-               },
-               {
-                    name: 'CSS',
-                    class: tecnologiesIKnow.css.class
-               },
-               {
-                    name: 'TypeScript',
-                    class: tecnologiesIKnow.typeScript.class
-               },
-               {
-                    name: 'Angular',
-                    class: tecnologiesIKnow.angular.class
-               },
-               {
-                    name: 'Git',
-                    class: tecnologiesIKnow.git.class
-               },
-               {
-                    name: 'Redux',
-                    class: tecnologiesIKnow.redux.class
-               },
-               {
-                    name: 'PostgreSQL',
-                    class: tecnologiesIKnow.postgresql.class
-               }
-          ]
-          // github: 'https://github.com/username_0/pokemon-rest-api',
-          // deployed: 'https://pokemon-rest-api.herokuapp.com/'
-     },
+     // {
+     //      id: 1,
+     //      name: 'Pokemon Rest API',
+     //      description: 'Aplicación web que utiliza React para mostrar información de Pokémon desde una API. Además, los usuarios pueden crear su propio Pokémon personalizado.',
+     //      imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1706656463/fapklp3bv2llu6xmuz8f.webp',
+     //      images: [
+     //           'https://i.ebayimg.com/images/g/jqkAAOSwL~hbLtr3/s-l1200.webp', 
+     //           'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/04/eevee-pokemon-go.jpg?tf=3840x', 
+     //           'https://static0.gamerantimages.com/wordpress/wp-content/uploads/Pokemon-Eevee.jpg',
+     //           'https://http2.mlstatic.com/D_NQ_NP_817145-MLU72637628411_112023-O.webp'
+     //      ], 
+     //      tecnologies: [
+     //           {
+     //                name: 'HTML',
+     //                class: tecnologiesIKnow.html.class
+     //           },
+     //           {
+     //                name: 'CSS',
+     //                class: tecnologiesIKnow.css.class
+     //           },
+     //           {
+     //                name: 'TypeScript',
+     //                class: tecnologiesIKnow.typeScript.class
+     //           },
+     //           {
+     //                name: 'Angular',
+     //                class: tecnologiesIKnow.angular.class
+     //           },
+     //           {
+     //                name: 'Git',
+     //                class: tecnologiesIKnow.git.class
+     //           },
+     //           {
+     //                name: 'Redux',
+     //                class: tecnologiesIKnow.redux.class
+     //           },
+     //           {
+     //                name: 'PostgreSQL',
+     //                class: tecnologiesIKnow.postgresql.class
+     //           }
+     //      ]
+     //      // github: 'https://github.com/username_0/pokemon-rest-api',
+     //      // deployed: 'https://pokemon-rest-api.herokuapp.com/'
+     // },
      {
           id: 2,
-          name: 'Traductor ing/esp',
+          name: 'Traductor de idiomas',
           description: 'Aplicación web que utiliza React para traducir de ingles a español e inversamente utilizando la API de deepl ( herramienta de traducción automática que utiliza inteligencia artificial para proporcionar traducciones precisas y naturales )',
           imageMain: 'https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg',
           images: [

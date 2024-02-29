@@ -94,8 +94,8 @@
                transform: translateX(0);
           }
           100% {
-               -webkit-animation: translateX(calc( -325px * 4));
-               transform: translateX(calc( -325px * 4));
+               -webkit-animation: translateX(calc( -325px * 3));
+               transform: translateX(calc( -325px * 3));
           }
      }
 }
