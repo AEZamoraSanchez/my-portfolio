@@ -148,12 +148,12 @@ export const projects : Project[] = [
           id: 2,
           name: 'Traductor de idiomas',
           description: 'Aplicación web que utiliza React para traducir de ingles a español e inversamente utilizando la API de deepl ( herramienta de traducción automática que utiliza inteligencia artificial para proporcionar traducciones precisas y naturales )',
-          imageMain: 'https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg',
+          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1709191616/dofqrmezxcooonwyq3k6.png',
           images: [
-               'https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg', 
-          'https://img.freepik.com/foto-gratis/resumen-bombilla-creativa-sobre-fondo-azul-brillante-ia-generativa_188544-8090.jpg', 
-          'https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg',
-          'https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg'
+          'https://res.cloudinary.com/dhs2okdae/image/upload/v1709191616/dofqrmezxcooonwyq3k6.png', 
+          'https://res.cloudinary.com/dhs2okdae/image/upload/v1709191615/ljy1shawnqhfrn7hmytk.png', 
+          'https://res.cloudinary.com/dhs2okdae/image/upload/v1709191615/twganffdq0kpgrz4i1ih.png',
+          'https://res.cloudinary.com/dhs2okdae/image/upload/v1709191615/drtmzlrhu9puhnhtwxtq.png'
           ], 
           tecnologies: [
                {
