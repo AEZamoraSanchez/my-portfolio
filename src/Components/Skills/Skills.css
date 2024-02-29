@@ -5,6 +5,9 @@
      @media ( min-width: 900px ) {
           padding-top: 45px;
      }
+
+     display: flex;
+     flex-direction: column;
 }
 
 .sectionSkills h2 {
@@ -28,7 +31,7 @@
      flex-wrap: wrap;
      padding: 40px 0;
      justify-content: center;
-
+     align-self: center;
      @media (min-width: 900px) {
      gap: 15px;     
 }

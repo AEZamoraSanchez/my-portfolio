@@ -2,10 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFile } from "@fortawesome/free-solid-svg-icons"
 import { faClone } from "@fortawesome/free-regular-svg-icons"
 import { useRef } from "react"
+import { useState } from "react"
 import "./Footer.css"
 
 const Footer = () => {
-
+     const [translateX, setTranslateX] = useState('0%');
+     const [ rightLeft, setRightLeft ] = useState(true);
      const textRef = useRef<HTMLInputElement | null>(null);
      const divRef = useRef<HTMLDivElement | null>(null);
 
@@ -13,9 +15,16 @@ const Footer = () => {
           textRef?.current?.select()
           document.execCommand('copy');
      };
+
+     const handleButtonClick = () => {
+          setTranslateX(translateX === '0%' ? '100%' : '0%');
+          setRightLeft(!rightLeft);
+     };
+
      return (
           <footer className="footerSection">
-               <section>
+               <section id="sectionFooter" style={{ transform: `translateX(${translateX})` }}>
+               <button id="openClose" onClick={handleButtonClick}>{rightLeft ? ">" : "<" }</button>
                     <div className="email-copy-div">
                          <input ref={textRef} value="ang02aezs@gmail.com" readOnly />
                          <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copiar correo" onClick={copyToClipboard}/>               
@@ -30,10 +39,6 @@ const Footer = () => {
                     <a href="https://github.com/AEZamoraSanchez" target="_blank" title="Ir a github">
                          <i className="devicon-github-original"></i>
                     </a>
-                    {/* 
-                     */}
-                         {/* <FontAwesomeIcon icon={faEnvelope} className="emailIcon" title="Copiar correo"/>                */}
-                    {/* </a> */}
                     </div>
                </section>
           </footer>
