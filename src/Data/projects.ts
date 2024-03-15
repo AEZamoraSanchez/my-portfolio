@@ -185,7 +185,7 @@ export const projects : Project[] = [
                }
           ],
           github: 'https://github.com/AEZamoraSanchez/Translate.git',
-          // deployed: 'https://pokemon-rest-api.herokuapp.com/'
+          deployed: 'https://angel-zamora-translate.vercel.app/'
      },
      {
           id: 3,
@@ -232,7 +232,7 @@ export const projects : Project[] = [
                }
           ],
           github: 'https://github.com/The-fourth-elements/The-fourth-Element-CLIENT.git',
-          // deployed: 'https://pokemon-rest-api.herokuapp.com/'
+          deployed: 'https://the-fourth-element-client.vercel.app/'
      },
      {
           id: 4,

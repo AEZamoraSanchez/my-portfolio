@@ -39,7 +39,7 @@ const ModalProject = ( { project, handleCloseModal }  : DataModalProject ) => {
                               <div className='modal-content-data-github'>
                               <h2>{ project.name }</h2>
                               <div className='links-content-modal'>
-                                   <a href="" target="_blank">
+                                   <a href={ project.deployed } target="_blank">
                                         <FontAwesomeIcon className='link-icon' icon={ faLink } />
                                    </a>
                                    <a href={project.github} target="_blank">
