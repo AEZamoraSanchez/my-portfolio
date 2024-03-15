@@ -4,7 +4,7 @@ import { tecnologiesIKnowToShow } from '../../Data/projects'
 const Skills = () => {
      return (
           <section className='sectionSkills' id="skills" >
-               <h2> Tecnologias: </h2> 
+               <h2> Technologies: </h2> 
                <div className="tecnologies-content">
                     {
                          tecnologiesIKnowToShow.map((tecnology, index) => (

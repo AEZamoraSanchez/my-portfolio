@@ -146,8 +146,8 @@ export const projects : Project[] = [
      // },
      {
           id: 2,
-          name: 'Traductor de idiomas',
-          description: 'Aplicación web que utiliza React para traducir de ingles a español e inversamente utilizando la API de deepl ( herramienta de traducción automática que utiliza inteligencia artificial para proporcionar traducciones precisas y naturales )',
+          name: 'Language translator',
+          description: 'Web application that uses React to translate from English to Spanish and vice versa using the deepl API (machine translation tool that uses artificial intelligence to provide accurate and natural translations).',
           imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1709191616/dofqrmezxcooonwyq3k6.png',
           images: [
           'https://res.cloudinary.com/dhs2okdae/image/upload/v1709191616/dofqrmezxcooonwyq3k6.png', 
@@ -190,7 +190,7 @@ export const projects : Project[] = [
      {
           id: 3,
           name: 'The Fourth Element',
-          description: 'Aplicacion web hecha con NEXTjs/React para Estanislao Bachrach para mostrar cursos en video y medir el progreso de los usuarios a través de cuestionarios',
+          description: 'Web application made with NEXTjs/React for Estanislao Bachrach to show video courses and measure the progress of users through questionnaires.',
           imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1706677472/qmzhc7bftzj9aspfqsti.png',
           images: [
                'https://res.cloudinary.com/dhs2okdae/image/upload/v1706675571/jnxzvnxa1yq0bepiqume.png', 
@@ -236,8 +236,8 @@ export const projects : Project[] = [
      },
      {
           id: 4,
-          name: 'Juego con Treejs',
-          description: 'juego hecho con Treejs',
+          name: 'Tree.js Game',
+          description: 'Game made with Tree.js',
           imageMain: 'https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg',
           images: [
                'https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg', 

@@ -49,7 +49,7 @@ const ModalProject = ( { project, handleCloseModal }  : DataModalProject ) => {
                               </div>
                               <p> { project.description  }</p>
                               <div className='tecnologiesUsed'>
-                                   <h3>Tecnologias usadas </h3>
+                                   <h3>Technologies used </h3>
                                    <div className='allTecnologiesContent'>
                                         { 
                                          project?.tecnologies?.map((tecnology, index ) => (

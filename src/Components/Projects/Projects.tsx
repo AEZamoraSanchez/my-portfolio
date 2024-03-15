@@ -4,7 +4,7 @@ import InfiniteCarousel from '../InfiniteCarousel/InfiniteCarousel';
 const Projects = () => {
      return (
           <section className='sectionProjects' id="projects" > 
-               <h2 className='sectionProjectsH'>Mis Proyectos: </h2>
+               <h2 className='sectionProjectsH'>My Projects: </h2>
                <InfiniteCarousel/>
           </section>
      )

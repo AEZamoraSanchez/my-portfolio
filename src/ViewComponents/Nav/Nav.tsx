@@ -25,6 +25,7 @@ const Nav = () => {
                          <a className='logoContent' href="#aboutMe">
                               <img className='logoImage' src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
                          </a>
+
                          
                     <div className='sectionLinks'>
                          <a onClick={ () => scrollToComponent('aboutMe')}>About me</a>
@@ -33,8 +34,9 @@ const Nav = () => {
                               
                          <a onClick={ () => scrollToComponent('workExperience')}>Experience</a>     
                               
-                         <a onClick={ () => scrollToComponent('skills')}>Skills</a>
+                         <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
                     </div>
+                         <button> Open Menu</button>
                </nav>
      )
 }

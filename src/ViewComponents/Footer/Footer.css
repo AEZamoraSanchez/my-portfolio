@@ -14,7 +14,7 @@
      /* background-color: rgba(134, 65, 177, .5); */
      gap: 5px;
      padding-left: 15px;
-     transition-duration: 1s;
+     transition-duration: .9s;
 }
 
 .footerSectionOpenClose {

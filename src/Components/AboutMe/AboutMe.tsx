@@ -6,7 +6,7 @@ const AboutMe = () => {
                     <h1>Angel Eduardo Zamora Sanchez</h1>
                     <h2>Full-Stack Web Developer </h2>
                     <p>
-                    Desarrollador Full-Stack con una sólida formación en tecnologías clave para el desarrollo web. Mi experiencia incluye la creación de aplicaciones web de alto rendimiento utilizando tecnologías como JavaScript, TypeScript, React, NEXT.js y Redux en el lado del front-end. También estoy familiarizado con Zustand para la gestión de estados y Sass para el manejo de estilos. Además, cuento con experiencia en el desarrollo de servidores y API con Node.js en el lado del back-end.
+                    Full-Stack developer with a strong background in key technologies for web development. My experience includes building high performance web applications using technologies such as JavaScript, TypeScript, Reactjs, Angular, NEXT.js, Redux and Zustand on the front-end side. I am also familiar with Tailwind, CSS and Sass for style management. I have experience in server-side and API development with Node.js, Express and Nest on the back-end side. In addition to knowledge in SQL databases such as MySQL, PostgreSQL, SQLite and SQLServer and noSQL such as MongoDB.
                     </p>
                </div>
                <div className='divImagePerfil'>

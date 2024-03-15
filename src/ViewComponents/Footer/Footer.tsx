@@ -31,16 +31,16 @@ const Footer = () => {
                {/* <button id="openClose" onClick={handleButtonClick}>{rightLeft ? ">" : "<" }</button> */}
                     <div className="email-copy-div">
                          <input ref={textRef} value="ang02aezs@gmail.com" readOnly />
-                         <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copiar correo" onClick={copyToClipboard}/>               
+                         <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copy Email" onClick={copyToClipboard}/>               
                     </div>
                     <div ref={divRef} className="redirect-links">
-                    <a href="https://drive.google.com/file/d/1A-_o0A-GqGAfJ3jkFms9KEdSsK51tgAA/view?usp=sharing" target="_blank" title="Ver CV">
+                    <a href="https://drive.google.com/file/d/1A-_o0A-GqGAfJ3jkFms9KEdSsK51tgAA/view?usp=sharing" target="_blank" title="Look CV">
                          <FontAwesomeIcon icon={faFile} className="fileIcon" />               
                     </a>
-                    <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="Ir a LinkedIn">
+                    <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="Go LinkedIn">
                          <i className="devicon-linkedin-plain"></i>
                     </a>
-                    <a href="https://github.com/AEZamoraSanchez" target="_blank" title="Ir a github">
+                    <a href="https://github.com/AEZamoraSanchez" target="_blank" title="Go Github">
                          <i className="devicon-github-original"></i>
                     </a>
                     </div>
