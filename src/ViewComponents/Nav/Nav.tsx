@@ -36,7 +36,7 @@ const Nav = () => {
                               
                          <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
                     </div>
-                         <button> Open Menu</button>
+                         <button className='openMenu'> Open Menu</button>
                </nav>
      )
 }

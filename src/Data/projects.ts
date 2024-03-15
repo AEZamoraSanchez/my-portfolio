@@ -86,7 +86,7 @@ export const tecnologiesIKnow = {
      jquery: { name: "jQuery", class: "devicon-jquery-plain" },
      react: { name: "React", class: "devicon-react-original" },
      angular: { name: "AngularJS", class: "devicon-angularjs-plain" },
-     nextjs: { name: "Nextjs", class: "devicon-nextjs-original" },
+     nextjs: { name: "Nextjs", class: "devicon-nextjs-plain" },
      tailwind: { name: "Tailwind", class: "devicon-tailwindcss-plain" },
      sass: { name: "Sass", class: "devicon-sass-original" },
      figma: { name: "Figma", class: "devicon-figma-plain" },
