@@ -1,5 +1,5 @@
 
-.navBar {
+/* .navBar {
      position: sticky;
      top: 0;
      left: 0;
@@ -18,7 +18,7 @@
      @media (min-width: 900px) {
           height: 20vh;
      }
-}
+} */
 
 .navBarScroll {
      position: sticky;
@@ -29,7 +29,7 @@
      padding: 5px;
      height: 10vh;
      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246));
-     border-radius: 0 0 10px 10px;
+     border-radius: 0 0 0 10px;
      z-index: 1;
      align-items: center;
      justify-content: space-between;
@@ -71,6 +71,8 @@
 }
 
 .openMenu {
+     font-size: 45px;
+     margin: 0  15px;
      @media (min-width:550px) {
           display: none;
      }
@@ -79,19 +81,22 @@
 
 .sectionLinks {
      display: flex;
-     gap: 7px;
-     /* padding-right: 10px; */
-     flex-direction: column;
-     position: absolute;
-     right: 0;
-     top: 12vh;
+
+     @media ( max-width: 549px ){
+          flex-direction: column;
+          background-color: rgb(191, 122, 255, 0.5);
+          gap: 7px;
+          position: absolute;
+          right: 0;
+          top: 10vh;
+          padding: 10px;
+          border-radius: 0 0 0 10px;
+     }
 
      @media (min-width: 550px) {
           gap: 10px;
           padding-right:15px;
           flex-direction: row;
-          position: static;
-
      }
 
      @media (min-width: 900px) {

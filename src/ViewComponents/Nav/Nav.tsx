@@ -1,6 +1,8 @@
 import './Nav.css'
 // import $ from 'jquery';
 import { useState } from 'react';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Nav = () => {
 
@@ -43,8 +45,7 @@ const Nav = () => {
                               </div>
                     }
 
-                         <button className='openMenu' onClick={ () => { setOpenMenu(!openMenu) 
-                              console.log(width)}}> Open Menu</button>
+                         <FontAwesomeIcon icon={ faBars } className='openMenu' onClick={ () => { setOpenMenu(!openMenu) }}/>
                </nav>
      )
 }
