@@ -4,12 +4,12 @@
   height: 47vh;
   border-radius: 15px 15px 0 0;
   display: grid;
-  grid-template-columns: minmax(40px, 80px) minmax(250px, 1fr) minmax(40px, 80px);
+  grid-template-columns: 30px minmax(250px, 1fr) 30px;
   background-color: rgba(0, 0, 0, .8);
 
-  /* @media (min-width: 700px) {
-      height: 55%;
-  } */
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(30px, 70px) minmax(250px, 1fr) minmax(30px, 70px);
+  }
 }
 
 .sliderManualContent button:hover {
@@ -19,6 +19,16 @@
 .sliderManualContent button {
   background-color: transparent;
   font-size: 100px;
+  z-index: 1;
+  place-self: center;
+
+  @media (min-width: 768px) {
+    font-size: 150px;
+  }
+
+  /* @media (min-width: 1024px) {
+    font-size: 200px;
+  } */
 }
 
 .sliderManual {
@@ -26,9 +36,11 @@
      width: 100%;
      height: 100%;
      overflow: hidden;
-     grid-column-start: 2;
-     /* grid-column-end: 3; */
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 1;
      place-self: center;
+     border-radius: 15px 15px 0 0;
    }
    
    .sliderManual img {

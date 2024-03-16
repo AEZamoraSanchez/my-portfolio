@@ -25,13 +25,13 @@ import './SliderProjects.css'
                <section className="sliderManualContent">
                     { images &&
                     <>
-                         <button style={{ borderRadius: '15px 0 0 0', border: 'none', color: 'white'}} onClick={handleBack} disabled={countImages === 0}> ❬ </button>
+                         <button style={{ borderRadius: '15px 0 0 0', border: 'none', color: 'white', gridColumnStart: '1', gridRowStart: '1'}} onClick={handleBack} disabled={countImages === 0}> ❬ </button>
                          <div className="sliderManual">
                          {images.map((image, index) => (
                               <img key={index} src={image} style={{ transform: `translateX(${(index - countImages) * 100}%)`,}} alt="" />
                          ))}
                          </div>
-                         <button style={{ borderRadius: '0 15px 0 0', border: 'none', color: 'white'}} onClick={handleNext} disabled={countImages === images.length - 1}> ❭ </button>
+                         <button style={{ borderRadius: '0 15px 0 0', border: 'none', color: 'white', gridColumnStart: '3', gridRowStart: '1'}} onClick={handleNext} disabled={countImages === images.length - 1}> ❭ </button>
                     </>
                     }
                </section>
