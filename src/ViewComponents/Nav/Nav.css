@@ -1,25 +1,4 @@
 
-/* .navBar {
-     position: sticky;
-     top: 0;
-     left: 0;
-     display: flex;
-     width: 100%;
-     padding: 5px;
-     height: 10vh;
-     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246));
-     border-radius: 0 0 10px 10px;
-     z-index: 1;
-     align-items: center;
-     justify-content: space-between;
-
-
-     animation: setNavBar 1.2s;
-     @media (min-width: 900px) {
-          height: 20vh;
-     }
-} */
-
 .navBarScroll {
      position: sticky;
      top: 0;
@@ -27,7 +6,7 @@
      display: flex;
      width: 100%;
      padding: 5px;
-     height: 10vh;
+     height: 7vh;
      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(57, 29, 75), rgb(106, 50, 141), rgb(138, 47, 199), rgb(165, 43, 246), rgb(165, 43, 246), rgb(165, 43, 246));
      border-radius: 0 0 0 10px;
      z-index: 1;
@@ -35,40 +14,20 @@
      justify-content: space-between;
 
      @media (min-width: 900px) {
-          height: 20vh;
+          height: 12vh;
           animation: progressBar auto linear both;
           animation-timeline: scroll(root);
-          animation-range: 0 300px;
+          animation-range: 0 400px;
      }
 }
 
 @media (min-width:900px) {
      @keyframes progressBar {
           to {
-               height: 10vh;
+               height: 7vh;
           }
      }
 }
-
-/* @keyframes setNavBar {
-     from {
-          -webkit-animation: translateY(-60px);
-          transform: translateY(-60px);
-          opacity: 0.2;
-          border-radius: 0;
-     }
-     70% {
-          -webkit-animation: translateY(10px);
-          transform: translateY(10px);
-          opacity: 0.7;
-     }
-     100% {
-          -webkit-animation: translateY(0);
-          transform: translateY(0);
-          opacity: 1;
-          border-radius: 0 0 10px 10px;
-     }
-} */
 
 .openMenu {
      font-size: 45px;
@@ -88,7 +47,7 @@
           gap: 7px;
           position: absolute;
           right: 0;
-          top: 10vh;
+          top: 7vh;
           padding: 10px;
           border-radius: 0 0 0 10px;
           animation: setLinks 0.8s;
@@ -158,20 +117,6 @@
      }
 }
 
-/* @keyframes progressA {
-     to {
-          font-size: 17px;
-     }
-} */
-/* 
-@media ( min-width: 550px ) {
-     @keyframes progressA {
-          to {
-               font-size: 20px;          
-          }
-     }
-} */
-
 @media ( min-width: 900px ) {
      @keyframes progressA {
           to {
@@ -201,41 +146,27 @@
 
 
 .logoImage{
-     height: 9vh;
+     height: 6vh;
      /* margin-left: 10px; */
      border-radius: 50%;
 
      @media ( min-width: 900px ) {
-          height: 16vh;
+          height: 7vh;
      }
      
      @media ( min-width: 1250px ) {
-          height: 17vh;
+          height: 10vh;
      }
 
      animation: progressLogoImage auto linear both;
      animation-timeline: scroll(root);
      animation-range: 0 200px;
 }
-/* 
-@keyframes progressLogoImage {
-     to {
-          height: 40px;
-     }
-} */
 
 @media ( min-width: 900px ) {
      @keyframes progressLogoImage {
           to {
-               height: 9vh;
-          }
-     }
-}
-
-@media ( min-width: 1250px ) {
-     @keyframes progressLogoImage {
-          to {
-               height: 9vh;
+               height: 6vh;
           }
      }
 }

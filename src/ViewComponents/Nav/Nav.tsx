@@ -9,15 +9,6 @@ const Nav = () => {
      const width = innerWidth
      const [ openMenu, setOpenMenu ] = useState( width <= 550 ? false : true);
 
-     // $(document).ready(() => {
-     //      $('#nav').addClass('navBar');
-
-     //      setTimeout(function() {
-     //           $('#nav').removeClass('navBar');
-     //           $('#nav').addClass('navBarScroll');
-     //       }, 1500);
-     // })
-
      const scrollToComponent = (componentId : string ) => {
           const component = document.getElementById(componentId);
       
@@ -28,7 +19,7 @@ const Nav = () => {
 
      return (
                <nav id='nav' className='navBarScroll'>
-                         <a className='logoContent' href="#aboutMe">
+                         <a className='logoContent' onClick={ () => scrollToComponent('aboutMe')}>
                               <img className='logoImage' src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
                          </a>
 
