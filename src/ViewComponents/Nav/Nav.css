@@ -35,6 +35,7 @@
      @media (min-width:550px) {
           display: none;
      }
+     cursor: pointer;
      /* visibility: hidden; */
 }
 
