@@ -22,17 +22,23 @@ const Nav = () => {
                          <a className='logoContent' onClick={ () => scrollToComponent('aboutMe')}>
                               <img className='logoImage' src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
                          </a>
+                         <div className='iconsDiv'>
+                              <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="Go LinkedIn">
+                              <i className="devicon-linkedin-plain"></i>
+                              </a>
+                              <a href="https://github.com/AEZamoraSanchez" target="_blank" title="Go Github">
+                                   <i className="devicon-github-original"></i>
+                              </a>
+                         </div>
 
                     {
                          openMenu && 
                               <div className='sectionLinks'>
-                                   <a onClick={ () => scrollToComponent('aboutMe')}>About me</a>
-
-                                   <a onClick={ () => scrollToComponent('projects')}>Projects</a>
+                                   <a onClick={ () => scrollToComponent('projects')}>Projs</a>
                                         
-                                   <a onClick={ () => scrollToComponent('workExperience')}>Experience</a>     
+                                   <a onClick={ () => scrollToComponent('workExperience')}>Exp</a>     
                                         
-                                   <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
+                                   <a onClick={ () => scrollToComponent('skills')}>Techs</a>
                               </div>
                     }
 
