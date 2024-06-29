@@ -1,5 +1,15 @@
+import { useRef } from 'react';
 import './AboutMe.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClone } from '@fortawesome/free-solid-svg-icons';
 const AboutMe = () => {
+
+     const textRef = useRef<HTMLInputElement | null>(null);
+     const copyToClipboard = () => {
+          textRef?.current?.select()
+          document.execCommand('copy');
+     };
+
      return (
           <section className='sectionAboutMe' id="aboutMe" >
                <div className='divDescription'>
@@ -11,6 +21,15 @@ const AboutMe = () => {
                </div>
                <div className='divImagePerfil'>
                     <img src="https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg" alt="" className='profileImage'/>
+                    <div className='emailCvDiv'>
+                         <div className="email-copy-div" onClick={copyToClipboard}>
+                              <input ref={textRef} value="ang02aezs@gmail.com" readOnly />
+                              <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copy Email" />               
+                         </div>
+                         <a href="https://drive.google.com/file/d/1A-_o0A-GqGAfJ3jkFms9KEdSsK51tgAA/view?usp=sharing" target="_blank" title="Look CV">
+                         <button>See CV</button>
+                         </a>
+                    </div>
                </div>     
           </section>
      )

@@ -1,4 +1,4 @@
-.footerSection {
+/* .footerSection {
      position: fixed;
      bottom: 0;
      right: 0;
@@ -11,7 +11,6 @@
      display: flex;
      flex-direction: column;
      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(95, 33, 134), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(95, 33, 134), rgba(0, 0, 0, 0));
-     /* background-color: rgba(134, 65, 177, .5); */
      gap: 5px;
      padding-left: 15px;
      transition-duration: .9s;
@@ -22,7 +21,7 @@
      width: fit-content;
      position: absolute;
      left: -40px;
-     top: 50%; /* Mueve el botón al centro del div */
+     top: 50%; 
      transform: translateY(-50%);
      font-size: 35px;
      color: rgb(241, 221, 255);
@@ -48,37 +47,11 @@
      justify-content: end;
      padding: 0px 15px;
      align-content: center;
-     /* padding-top: 5px; */
      
 
      @media (min-width: 550px) {
           gap: 10px;
      }
-}
-
-.email-copy-div {
-     display: flex;
-     width: 100%;
-     padding-right: 15px;
-}
-
-
-.email-copy-div input {
-     border: none;
-     background: none;
-     color: white;
-    font-size: 10px;
-    width: 110px;
-
-    @media (min-width: 550px) {
-         font-size: 15px;
-         width: 160px;
-    }
-
-    @media (min-width: 900px) {
-         font-size: 20px;
-         width: 210px;
-    }
 }
 
 
@@ -135,4 +108,4 @@
      @media (min-width: 900px) {
           font-size: 50px;
      }
-}
+} */
