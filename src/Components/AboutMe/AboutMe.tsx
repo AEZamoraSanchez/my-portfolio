@@ -26,7 +26,7 @@ const AboutMe = () => {
                               <input ref={textRef} value="ang02aezs@gmail.com" readOnly />
                               <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copy Email" />               
                          </div>
-                         <a href="https://drive.google.com/file/d/1A-_o0A-GqGAfJ3jkFms9KEdSsK51tgAA/view?usp=sharing" target="_blank" title="Look CV">
+                         <a href="https://drive.google.com/file/d/1jtrRuRGjWCrbaw5SHIrDL6F6BCalmVoh/view?usp=sharing" target="_blank" title="Look CV">
                          <button>See CV</button>
                          </a>
                     </div>
