@@ -69,8 +69,8 @@
           transform: translateX(0);
      }
      100% {
-          -webkit-animation: translateX(calc( -220px * 4));
-          transform: translateX(calc( -220px * 4));
+          -webkit-animation: translateX(calc( -220px * 3));
+          transform: translateX(calc( -220px * 3));
      }
 }
 
@@ -81,8 +81,8 @@
                transform: translateX(0);
           }
           100% {
-               -webkit-animation: translateX(calc( -270px * 4));
-               transform: translateX(calc( -270px * 4));
+               -webkit-animation: translateX(calc( -270px * 3));
+               transform: translateX(calc( -270px * 3));
           }
      }
 }

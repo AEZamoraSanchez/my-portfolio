@@ -1,0 +1,23 @@
+export const tecnologiesIKnow = {
+     css: { name: "CSS", class: "devicon-css3-plain" },
+     html: { name: "HTML5", class: "devicon-html5-plain" },
+     typeScript: { name: "TypeScript", class: "devicon-typescript-plain" },
+     javaScript: { name: "JavaScript", class: "devicon-javascript-plain" },
+     jquery: { name: "jQuery", class: "devicon-jquery-plain" },
+     react: { name: "React", class: "devicon-react-original" },
+     angular: { name: "AngularJS", class: "devicon-angularjs-plain" },
+     nextjs: { name: "Nextjs", class: "devicon-nextjs-plain" },
+     tailwind: { name: "Tailwind", class: "devicon-tailwindcss-plain" },
+     sass: { name: "Sass", class: "devicon-sass-original" },
+     figma: { name: "Figma", class: "devicon-figma-plain" },
+     github: { name: "GitHub", class: "devicon-github-original" },
+     git: { name: "Git", class: "devicon-git-plain" },
+     redux: { name: "Redux", class: "devicon-redux-original" },
+     three: { name: "Three", class: "devicon-threejs-original" },
+     nodejs: { name: "Nodejs", class: "devicon-nodejs-plain" },
+     postgresql: { name: "PostgreSQL", class: "devicon-postgresql-plain" },
+     mongodb: { name: "MongoDB", class: "devicon-mongodb-plain-wordmark" },
+     rxjs : { name: "Rxjs", class: "devicon-rxjs-plain" },
+     mysql : { name: "MySQL", class: "devicon-mysql-original" },
+     nest: { name: "Nest", class: "devicon-nestjs-plain"}
+}

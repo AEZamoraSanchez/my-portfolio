@@ -2,7 +2,7 @@ import './InfiniteCarousel.css'
 import $ from 'jquery';
 import { useEffect, useState } from 'react';
 import ModalProject from '../ModalProject/ModalProject';
-import { projects } from '../../Data/projects';
+import { projects1 } from '../../Data/projects';
 
 const InfiniteCarousel = () => {
 
@@ -46,19 +46,19 @@ const InfiniteCarousel = () => {
      return (
           <section className="sliderContentMajor">
                <div className="sliderContentDivs">
-                    {projects.map((project, index) => (
+                    {projects1.map((project, index) => (
                          <div onClick={() => handleOpenModal(index)} key={`image-${index}`} className="divSlideCarousel" >
                               <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
                               <h2 className='divSlideCarouselH'>{ project.name }</h2>
                          </div>
                     ))}
-                    {projects.map((project, index) => (
+                    {projects1.map((project, index) => (
                          <div onClick={() => handleOpenModal(index)} key={`image-${index + project.images.length}`} className="divSlideCarousel" >
                               <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
                               <h2 className='divSlideCarouselH'>{ project.name }</h2>
                          </div>
                     ))} 
-                    {projects.map((project, index) => (
+                    {projects1.map((project, index) => (
                          <div onClick={() => handleOpenModal(index)} key={`image-${index + project.images.length}`} className="divSlideCarousel" >
                               <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
                               <h2 className='divSlideCarouselH'>{ project.name }</h2>
@@ -68,7 +68,7 @@ const InfiniteCarousel = () => {
                </div>
                {
                     openModal &&
-                    <ModalProject project={ projects[indexProject]} handleCloseModal={ handleCloseModal } />
+                    <ModalProject project={ projects1[indexProject]} handleCloseModal={ handleCloseModal } />
                }
           </section>
      )

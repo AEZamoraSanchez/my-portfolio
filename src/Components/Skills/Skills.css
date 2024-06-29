@@ -2,12 +2,13 @@
      /* background-color: rgb(255, 142, 3); */
      width: 100%;
      /* padding: 40px 0; */
-     @media ( min-width: 900px ) {
+     /* @media ( min-width: 900px ) {
           padding-top: 45px;
-     }
+     } */
 
      display: flex;
      flex-direction: column;
+     align-content: center;
 }
 
 .sectionSkills h2 {
@@ -23,46 +24,55 @@
           margin-left: 5vw;
      }
 }
-/* style={{ display: 'flex', gap: '20px', width: '100%', flexWrap: 'wrap', padding: '20px 0', justifyContent: 'center' }} */
+
 .tecnologies-content {
      display: flex;
      gap: 10px;
-     width: 90%;
+     width: 100%;
      flex-wrap: wrap;
-     padding: 40px 0;
-     justify-content: center;
+     padding: 10px 0;
+     justify-content: start;
      align-self: center;
      @media (min-width: 900px) {
-     gap: 15px;     
+     gap: 10px;     
 }
 
 }
-/* style={{ width: '180px', aspectRatio: '1 / 1', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '8px' }} */
+.tecnologies-content-language {
+     display: flex;
+     gap: 10px;
+     width: 100%;
+     flex-wrap: wrap;
+     padding: 10px 15px;
+     justify-content: start;
+     align-self: center;
+     @media (min-width: 900px) {
+          gap: 10px;     
+          padding: 10px 5vw;
+}
 
-.tecnologies-content div {
-     width: 100px;
-     /* aspect-ratio: 1 / 1; */
+}
+.tecnologies-content-language div {
+     width: 70px;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     gap: 8px;
+     gap: 5px;
 
      @media (min-width: 550px) {
-          width: 140px;
+          width: 100px;
      }
 
 
 }
 
-/* style={{ fontSize: '100px', color: 'rgb(241, 221, 255)' }} */
-
-.tecnologies-content div i {
-     font-size: 50px;
+.tecnologies-content-language div i {
+     font-size: 40px;
      color: rgb(241, 221, 255);
 
      @media (min-width: 550px) {
-          font-size: 60px;
+          font-size: 45px;
      }
 
      @media (min-width: 900px) {
@@ -70,14 +80,73 @@
      }
 }
 
-/* style={{ fontSize: '32px', textAlign: 'center', margin: '0', color: 'rgb(241, 221, 255)'}} */
-.tecnologies-content div h3 {
-     font-size: 20px;
+.tecnologies-content-language div h4 {
+     font-size: 15px;
      color: rgb(241, 221, 255);
      text-align: center;
      margin: 0;
 
      @media (min-width: 550px) {
-          font-size: 25px;
+          font-size: 20px;
      }
+}
+
+.tecnologies-content div {
+     width: 70px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;
+
+     @media (min-width: 550px) {
+          width: 100px;
+     }
+
+
+}
+
+.tecnologies-content div i {
+     font-size: 40px;
+     color: rgb(241, 221, 255);
+
+     @media (min-width: 550px) {
+          font-size: 45px;
+     }
+
+     @media (min-width: 900px) {
+          font-size: 70px;
+     }
+}
+
+.tecnologies-content div h4 {
+     font-size: 15px;
+     color: rgb(241, 221, 255);
+     text-align: center;
+     margin: 0;
+
+     @media (min-width: 550px) {
+          font-size: 20px;
+     }
+}
+
+.sectionStack {
+     /* width: 100%; */
+     display: flex;
+     flex-direction: column;
+     margin: 15px 25px;
+     border: 1px solid rgb(241, 221, 255);
+     padding: 5px 10px;
+     border-radius: 5px;
+
+     @media (min-width: 900px) {
+          margin: 15px 5vw;
+     }
+}
+
+.sectionStack h3 {
+     font-size: 25px;
+     color: rgb(241, 221, 255);
+     text-align: start;
+     margin: 5px 0px;
 }
