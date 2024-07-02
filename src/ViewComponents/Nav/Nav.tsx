@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Nav = () => {
 
-     const width = innerWidth
-     const [ openMenu, setOpenMenu ] = useState( width <= 900 ? false : true);
+     // const width = innerWidth
+     const [ openMenu, setOpenMenu ] = useState( false );
 
      const scrollToComponent = (componentId : string ) => {
           const component = document.getElementById(componentId);
@@ -30,9 +30,7 @@ const Nav = () => {
                                    <i className="devicon-github-original"></i>
                               </a>
                          </div>
-
-                    {
-                         openMenu && 
+                         { openMenu &&
                               <div className='sectionLinks'>
                                    <a onClick={ () => scrollToComponent('projects')}>Projects</a>
                                         
@@ -40,7 +38,16 @@ const Nav = () => {
                                         
                                    <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
                               </div>
-                    }
+                         }
+
+                              <div className='sectionLinks900'>
+                                   <a onClick={ () => scrollToComponent('projects')}>Projects</a>
+                                        
+                                   <a onClick={ () => scrollToComponent('workExperience')}>Experience</a>     
+                                        
+                                   <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
+                              </div>
+                    
 
                          <FontAwesomeIcon icon={ faBars } className='openMenu' onClick={ () => { setOpenMenu(!openMenu) }}/>
                </nav>

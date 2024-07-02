@@ -90,12 +90,9 @@
 
      @media( min-width: 900px ) {
           width: 95%;
-          max-width: 450px;
+          max-width: 400px;
      }
 
-     @media ( min-width: 1250px ) {
-          max-width: 550px;
-     }
 }
 
 .emailCvDiv {

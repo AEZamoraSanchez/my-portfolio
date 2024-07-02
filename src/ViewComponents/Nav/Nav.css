@@ -86,6 +86,21 @@
      }
           
      @media (min-width: 900px) {
+          display: none;
+     }
+
+}
+
+.sectionLinks900 {
+     display: flex;
+     justify-self: end;
+     align-self: center;
+     
+     @media ( max-width: 899px ) {
+          display: none;
+     }
+
+     @media (min-width: 900px) {
           flex-direction: row;
           margin-right: 30px;
           gap: 8px;
@@ -123,13 +138,25 @@
      padding: 1px 3px;
      border-radius: 5px;
      border: 1px solid rgb(255, 255, 255);
-
+     cursor: pointer;
      @media (min-width: 550px) {
           font-size: 20px;
      }
 
      @media (max-width: 899px) {
           width: 100%;
+     }
+}
+.sectionLinks900 a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     width: fit-content;
+     padding: 1px 3px;
+     border-radius: 5px;
+     border: 1px solid rgb(255, 255, 255);
+
+     @media (min-width: 550px) {
+          font-size: 20px;
      }
 
      &:hover {
