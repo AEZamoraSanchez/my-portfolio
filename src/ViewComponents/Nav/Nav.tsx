@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Nav = () => {
 
      const width = innerWidth
-     const [ openMenu, setOpenMenu ] = useState( width <= 550 ? false : true);
+     const [ openMenu, setOpenMenu ] = useState( width <= 900 ? false : true);
 
      const scrollToComponent = (componentId : string ) => {
           const component = document.getElementById(componentId);
@@ -34,11 +34,11 @@ const Nav = () => {
                     {
                          openMenu && 
                               <div className='sectionLinks'>
-                                   <a onClick={ () => scrollToComponent('projects')}>Projs</a>
+                                   <a onClick={ () => scrollToComponent('projects')}>Projects</a>
                                         
-                                   <a onClick={ () => scrollToComponent('workExperience')}>Exp</a>     
+                                   <a onClick={ () => scrollToComponent('workExperience')}>Experience</a>     
                                         
-                                   <a onClick={ () => scrollToComponent('skills')}>Techs</a>
+                                   <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
                               </div>
                     }
 
