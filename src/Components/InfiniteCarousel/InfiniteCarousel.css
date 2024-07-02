@@ -26,7 +26,7 @@
 
 .divSlideCarousel {
      display: flex;
-     background-color:  rgb(109, 6, 182);
+     border: 3.2px solid  rgb(138, 47, 199);
      flex-direction: column;
      border-radius: 10px;
      transition-duration: 1.5s;
@@ -34,16 +34,11 @@
 /* <h2 style={{ fontSize: '30px', margin: '20px 0', textAlign: 'center' }}>{ project.name }</h2> */
 .divSlideCarouselH {
      font-size: 27px;
-     margin: 8px 0;
      text-align: center;
-
+     border-top: 3.2px solid  rgb(138, 47, 199);
+     padding: 5px 0;
      @media (min-width: 900px) {
           font-size: 30px;
-          margin: 10px 0;
-     }
-
-     @media (min-width: 1250px) {
-          margin: 20px 0;
      }
 }
 
