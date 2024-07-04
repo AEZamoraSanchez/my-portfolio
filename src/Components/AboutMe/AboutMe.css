@@ -3,11 +3,11 @@
      padding: 0px;
      display: grid;
      @media (min-width: 900px) {
-     grid-template-columns: minmax(550px, 1fr) minmax(350px, 1fr);
+     grid-template-columns: minmax(550px, 1fr) minmax(350px, 440px);
      }
      @media (min-width: 1250px) {
           width: 90%;
-          grid-template-columns: repeat( 5, 1fr);
+          /* grid-template-columns: repeat( 5,s 1fr); */
      }
 
 }
@@ -24,11 +24,11 @@
           padding-left: 7vw;
      }
 
-     @media ( min-width: 1250px ) {
+     /* @media ( min-width: 1250px ) {
           padding: 30px;
           grid-column-start: 1;
           grid-column-end: 4;
-     }
+     } */
 }
 .divDescription h1 {
      font-size: 40px;
@@ -75,10 +75,10 @@
           gap: 20px;
      }
 
-     @media ( min-width: 1250px ) {
+     /* @media ( min-width: 1250px ) {
           grid-column-start: 4;
           grid-column-end: 6;
-     }
+     } */
 }
 
 .profileImage {

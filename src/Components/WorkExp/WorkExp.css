@@ -39,7 +39,7 @@
      /* padding: 0 35px; */
      
      @media (min-width: 850px) {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: 350px 1fr;
           padding: 40px 0;          
      }
 }
