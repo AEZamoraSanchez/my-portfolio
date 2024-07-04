@@ -151,12 +151,14 @@ export const projects1 : Project[] = [
           id: 3,
           name: 'Lockers',
           description: 'Web application using Angular, Nestjs and MySql in which you can store information modules as a folder structure.',
-          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1706656463/fapklp3bv2llu6xmuz8f.webp',
+          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png',
           images: [
-               'https://i.ebayimg.com/images/g/jqkAAOSwL~hbLtr3/s-l1200.webp', 
-               'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/04/eevee-pokemon-go.jpg?tf=3840x', 
-               'https://static0.gamerantimages.com/wordpress/wp-content/uploads/Pokemon-Eevee.jpg',
-               'https://http2.mlstatic.com/D_NQ_NP_817145-MLU72637628411_112023-O.webp'
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720072026/Screenshot_6_f2yvo7.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070807/Screenshot_2_bjgmnt.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070874/Screenshot_3_rpam1b.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070903/Screenshot_4_txlcve.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070961/Screenshot_5_rhmvjh.png', 
           ], 
           tecnologies: [
                {
