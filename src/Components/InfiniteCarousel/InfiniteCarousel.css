@@ -21,7 +21,9 @@
 }
 
 .sliderContentDivs:hover {
-     animation-play-state: paused;
+     @media (hover: hover) and (pointer: fine) {
+          animation-play-state: paused;
+     }
 }
 
 .divSlideCarousel {
