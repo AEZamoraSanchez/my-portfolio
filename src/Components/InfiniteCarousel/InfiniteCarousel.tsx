@@ -26,6 +26,12 @@ const InfiniteCarousel = () => {
        const mediaQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
        mediaQuery.addListener(handleMediaQueryChange);
      
+       $('.divSlideCarousel').hover(
+          function () {
+                    $(this).css('cursor', 'pointer');
+          },  
+     )
+
        if(!isNonTouchDevice){
             let timeOutHover : number ;
      
@@ -35,7 +41,6 @@ const InfiniteCarousel = () => {
                            $(this).siblings().css('transform', 'scale(0.8)');
                            $(this).siblings().css('transition-duration', '1.5s');
                            $(this).css('transform', 'scale(1.2)');
-                           $(this).css('cursor', 'pointer');
                            $(this).css('transition-duration', '1.5s');
                       }, 200)
                  },
