@@ -150,7 +150,7 @@ export const projects1 : Project[] = [
      {
           id: 3,
           name: 'Lockers',
-          description: 'Web application using Angular, Nestjs and MySql in which you can store information modules as a folder structure.',
+          description: 'Web application using Angular, Nestjs and MySql in which you can store information modules as a folder structure. If you wanna see how it works log in as a guest',
           imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png',
           images: [
                'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png', 

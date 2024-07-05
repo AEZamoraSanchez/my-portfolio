@@ -136,11 +136,6 @@
           padding: 2px 15px;
      }
 
-     @media (min-width: 1050px) {
-          width: 100px;
-          font-size: 20px;
-          padding: 2px 0px;
-     }
 }
 
 .emailCvDiv a {
