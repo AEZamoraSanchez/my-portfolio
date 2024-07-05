@@ -15,7 +15,7 @@ const Skills = () => {
                          languages.map((language, index) => (
                               <div key={index}>
                                    <i className={ language.class }/>
-                                   <h4>{language.name}</h4>
+                                   <h3>{language.name}</h3>
                               </div>
                          ))
                     }
