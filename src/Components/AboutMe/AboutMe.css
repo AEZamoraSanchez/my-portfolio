@@ -144,9 +144,6 @@
           max-width: 300px;
      }
 
-     @media (min-width: 1050px) {
-          width: 100px;
-     }
 }
 
 .email-copy-div {
@@ -165,6 +162,7 @@
      }
 
      @media (min-width: 900px) {
+          width: 100%;
           justify-content: center;
           gap: 10px;
           max-width: 300px;
