@@ -5,5 +5,7 @@ export const othersTechnologies = [
      { name: "Figma", class: "devicon-figma-plain" },
      { name: "GitHub", class: "devicon-github-original" },
      { name: "Git", class: "devicon-git-plain" },
-     { name: "Rxjs", class: "devicon-rxjs-plain" }
+     { name: "ReactiveX", class: "devicon-rxjs-plain" },
+     { name: "AWS", class: "devicon-amazonwebservices-plain-wordmark" },
+
 ]
