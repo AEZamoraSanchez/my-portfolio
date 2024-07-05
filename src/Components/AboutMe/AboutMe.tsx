@@ -22,10 +22,10 @@ const AboutMe = () => {
                <div className='divImagePerfil'>
                     <img src="https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg" alt="" className='profileImage'/>
                     <div className='emailCvDiv'>
-                         <div className="email-copy-div" onClick={copyToClipboard}>
-                              <input ref={textRef} value="ang02aezs@gmail.com" readOnly />
+                         <label htmlFor="myEmail" className="email-copy-div" onClick={copyToClipboard}>
+                              <input id="myEmail" ref={textRef} value="ang02aezs@gmail.com" readOnly />
                               <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copy Email" />               
-                         </div>
+                         </label>
                          <a href="https://drive.google.com/file/d/1znQ28FvEEsW8KRVQ97XHCiCcScM0HAI8/view?usp=sharing" target="_blank" title="Look CV">
                          <button>See CV</button>
                          </a>

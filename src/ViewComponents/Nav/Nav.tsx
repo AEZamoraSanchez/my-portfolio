@@ -19,9 +19,7 @@ const Nav = () => {
 
      return (
                <nav id='nav' className='navBarScroll'>
-                         <a className='logoContent' onClick={ () => scrollToComponent('aboutMe')}>
-                              <img className='logoImage' src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
-                         </a>
+                              <img className='logoImage' onClick={ () => scrollToComponent('aboutMe')} src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
                          <div className='iconsDiv'>
                               <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="Go LinkedIn">
                               <i className="devicon-linkedin-plain"></i>
@@ -32,20 +30,20 @@ const Nav = () => {
                          </div>
                          { openMenu &&
                               <div className='sectionLinks'>
-                                   <a onClick={ () => scrollToComponent('projects')}>Projects</a>
+                                   <button onClick={ () => scrollToComponent('projects')}>Projects</button>
                                         
-                                   <a onClick={ () => scrollToComponent('workExperience')}>Experience</a>     
+                                   <button onClick={ () => scrollToComponent('workExperience')}>Experience</button>     
                                         
-                                   <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
+                                   <button onClick={ () => scrollToComponent('skills')}>Technologies</button>
                               </div>
                          }
 
                               <div className='sectionLinks900'>
-                                   <a onClick={ () => scrollToComponent('projects')}>Projects</a>
+                                   <button onClick={ () => scrollToComponent('projects')}>Projects</button>
                                         
-                                   <a onClick={ () => scrollToComponent('workExperience')}>Experience</a>     
+                                   <button onClick={ () => scrollToComponent('workExperience')}>Experience</button>     
                                         
-                                   <a onClick={ () => scrollToComponent('skills')}>Technologies</a>
+                                   <button onClick={ () => scrollToComponent('skills')}>Technologies</button>
                               </div>
                     
 
