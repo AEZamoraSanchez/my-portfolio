@@ -53,7 +53,7 @@
 
 }
 .tecnologies-content-language div {
-     width: 70px;
+     width: 75px;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -61,7 +61,7 @@
      gap: 5px;
 
      @media (min-width: 550px) {
-          width: 100px;
+          width: 120px;
      }
 
 
@@ -72,22 +72,23 @@
      color: rgb(241, 221, 255);
 
      @media (min-width: 550px) {
-          font-size: 45px;
+          font-size: 55px;
      }
 
      @media (min-width: 900px) {
-          font-size: 70px;
+          font-size: 60px;
      }
 }
 
-.tecnologies-content-language div h4 {
+.tecnologies-content-language div p {
      font-size: 15px;
+     font-weight: 600;
      color: rgb(241, 221, 255);
      text-align: center;
      margin: 0;
 
      @media (min-width: 550px) {
-          font-size: 20px;
+          font-size: 23px;
      }
 }
 
@@ -115,11 +116,12 @@
      }
 
      @media (min-width: 900px) {
-          font-size: 70px;
+          font-size: 58px;
      }
 }
 
-.tecnologies-content div h4 {
+.tecnologies-content div p {
+     font-weight: 600;
      font-size: 15px;
      color: rgb(241, 221, 255);
      text-align: center;

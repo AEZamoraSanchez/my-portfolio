@@ -15,7 +15,7 @@ const Skills = () => {
                          languages.map((language, index) => (
                               <div key={index}>
                                    <i className={ language.class }/>
-                                   <h3>{language.name}</h3>
+                                   <p>{language.name}</p>
                               </div>
                          ))
                     }
@@ -27,7 +27,7 @@ const Skills = () => {
                               front.map((front, index) => (
                                    <div key={index}>
                                         <i className={ front.class }/>
-                                        <h4>{front.name}</h4>
+                                        <p>{front.name}</p>
                                    </div>
                               ))
                          }
@@ -40,7 +40,7 @@ const Skills = () => {
                               backend.map((backend, index) => (
                                    <div key={index}>
                                         <i className={ backend.class }/>
-                                        <h4>{backend.name}</h4>
+                                        <p>{backend.name}</p>
                                    </div>
                               ))
                          }
@@ -53,7 +53,7 @@ const Skills = () => {
                               databases.map((databases, index) => (
                                    <div key={index}>
                                         <i className={ databases.class }/>
-                                        <h4>{databases.name}</h4>
+                                        <p>{databases.name}</p>
                                    </div>
                               ))
                          }
@@ -66,7 +66,7 @@ const Skills = () => {
                               othersTechnologies.map((othersTechnologies, index) => (
                                    <div key={index}>
                                         <i className={ othersTechnologies.class }/>
-                                        <h4>{othersTechnologies.name}</h4>
+                                        <p>{othersTechnologies.name}</p>
                                    </div>
                               ))
                          }
