@@ -5,11 +5,11 @@
      @media (min-width: 900px) {
      grid-template-columns: 1fr 350px;
      width: 90%;
+     padding: 20px 0;
 }
-@media (min-width: 1250px) {
+/* @media (min-width: 1250px) {
           grid-template-columns: 1fr minmax(350px, 440px);
-          /* grid-template-columns: repeat( 5,s 1fr); */
-     }
+     } */
 
 }
 
@@ -17,19 +17,13 @@
 .divDescription {
      padding: 15px;
      display: flex;
-     justify-content: center;
+     /* justify-content: center; */
      flex-direction: column;
-/* 
-     @media ( min-width: 900px ) {
-          padding: 30px 0;
-          padding-left: 7vw;
+
+     /* @media (min-width: 900px) {
+          padding: 0px;
      } */
 
-     /* @media ( min-width: 1250px ) {
-          padding: 30px;
-          grid-column-start: 1;
-          grid-column-end: 4;
-     } */
 }
 .divDescription h1 {
      font-size: 40px;
@@ -66,8 +60,8 @@
      padding: 10px;
      display: flex;
      flex-direction: column;
-     justify-items: center;
-     justify-content: center;
+     /* justify-items: center;
+     justify-content: center; */
      align-items: center;
      gap: 10px;
 
@@ -83,16 +77,18 @@
 }
 
 .profileImage {
-     width: 70%;
+     width: 50%;
      max-width: 350px;
-     aspect-ratio: 1 /1 ;
-     place-self: center;
-     border-radius: 50%;
+     object-fit: cover;
+     /* aspect-ratio: 1 /1 ; */
+     /* place-self: center; */
+     border-radius: 50px;
 
      @media( min-width: 900px ) {
           width: 95%;
-          max-width: 400px;
+          max-width: 300px;
      }
+
 
 }
 

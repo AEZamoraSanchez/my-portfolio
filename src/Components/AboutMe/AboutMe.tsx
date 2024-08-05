@@ -20,7 +20,8 @@ const AboutMe = () => {
                     </p>
                </div>
                <div className='divImagePerfil'>
-                    <img src="https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg" alt="" className='profileImage'/>
+                    <img src="https://res.cloudinary.com/dhs2okdae/image/upload/v1722847843/cypfqdwxazrkiejr6ame.jpg" alt="" className='profileImage'/>
+                    {/* <img src="https://res.cloudinary.com/dhs2okdae/image/upload/v1722847661/asa978ohknwsnnt1nxd5.jpg" alt="" className='profileImage'/> */}
                     <div className='emailCvDiv'>
                          <label htmlFor="myEmail" className="email-copy-div" onClick={copyToClipboard}>
                               <input id="myEmail" ref={textRef} value="ang02aezs@gmail.com" readOnly />
