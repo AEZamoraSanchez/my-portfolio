@@ -9,7 +9,7 @@
 .sliderContentDivs {
      display: flex;
      -webkit-animation: scroll 10s linear infinite;
-     animation: scroll 10s linear infinite;
+     animation: scroll 15s linear infinite;
      /* width: 1000px; */
      flex-wrap: nowrap;
      gap: 20px;
