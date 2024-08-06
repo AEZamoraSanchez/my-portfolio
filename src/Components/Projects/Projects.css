@@ -1,12 +1,12 @@
 .sectionProjects {
      width: 100%;
-     padding: 10px 0;
+     padding: 15px;
      display: flex;
      flex-direction: column;
      /* padding-top: 11vh; */
 
-     @media ( min-width: 900px ) {
-          padding-top: 30px;
+     @media (min-width: 900px) {
+          width: 90%;
      }
 
      @media ( min-width: 1250px ) {
@@ -16,15 +16,15 @@
 
 .sectionProjectsH {
      font-size: 32px;
-     margin: 15px;
+     /* margin: 15px; */
      color: rgb(241, 221, 255);
 
      @media (min-width: 550px) {
           font-size: 35px;
      }
-     
+/*      
      @media( min-width: 900px ) {
           margin-left: 5vw;
-     }
+     } */
 
 }
