@@ -145,7 +145,7 @@ export const projects1 : Project[] = [
                }
           ],
           github: 'https://github.com/The-fourth-elements/The-fourth-Element-CLIENT.git',
-          deployed: 'https://the-fourth-element-client.vercel.app/'
+          // deployed: 'https://the-fourth-element-client.vercel.app/'
      },
      {
           id: 3,
