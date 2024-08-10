@@ -1,9 +1,10 @@
 .sectionSkills {
      /* background-color: rgb(255, 142, 3); */
      width: 100%;
-     padding: 15px;
+     padding: 55px 15px 0;
      @media (min-width: 900px) {
           width: 90%;
+          padding-top: 70px;
      }
 
      display: flex;

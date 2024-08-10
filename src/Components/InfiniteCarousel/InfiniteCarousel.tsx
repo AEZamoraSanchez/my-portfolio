@@ -72,6 +72,7 @@ const InfiniteCarousel = () => {
 
      return (
           <section className="sliderContentMajor">
+               <span>click one</span>
                <div className="sliderContentDivs">
                     {projects1.map((project, index) => (
                          <div onClick={() => handleOpenModal(index)} key={`image-${index}`} className="divSlideCarousel" >

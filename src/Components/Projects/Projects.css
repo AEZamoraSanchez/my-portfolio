@@ -3,6 +3,7 @@
      padding: 15px;
      display: flex;
      flex-direction: column;
+     padding-top: 30px;
      /* padding-top: 11vh; */
 
      @media (min-width: 900px) {
@@ -16,7 +17,7 @@
 
 .sectionProjectsH {
      font-size: 32px;
-     /* margin: 15px; */
+     margin: 0;
      color: rgb(241, 221, 255);
 
      @media (min-width: 550px) {
