@@ -23,11 +23,14 @@ const Nav = () => {
                <nav id='nav' className='navBarScroll'>
                               <img className='logoImage' onClick={ () => scrollToComponent('aboutMe', 'center')} src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
                          <div className='iconsDiv'>
-                              <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="Go LinkedIn">
+                              <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="LinkedIn">
                               <i className="devicon-linkedin-plain"></i>
                               </a>
-                              <a href="https://github.com/AEZamoraSanchez" target="_blank" title="Go Github">
+                              <a href="https://github.com/AEZamoraSanchez" target="_blank" title="Github">
                                    <i className="devicon-github-original"></i>
+                              </a>
+                              <a href="https://hub.docker.com/u/aezamorasanchez" target="_blank" title="DockerHub">
+                                   <i className="devicon-docker-plain"></i>
                               </a>
                          </div>
                          { openMenu &&
