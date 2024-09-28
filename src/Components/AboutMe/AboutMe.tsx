@@ -14,9 +14,17 @@ const AboutMe = () => {
           <section className='sectionAboutMe' id="aboutMe" >
                <div className='divDescription'>
                     <h1>Angel Eduardo Zamora Sanchez</h1>
-                    <h2>Full-Stack Web Developer </h2>
+                    <h2>Full-Stack Web Developer with 2 years experience </h2>
                     <p>
-                    Full-Stack developer with a strong background in key technologies for web development. My experience includes building high performance web applications using technologies such as JavaScript, TypeScript, Reactjs, Angular, NEXT.js, Redux and Zustand on the front-end side. I am also familiar with Tailwind, CSS and Sass for style management. I have experience in server-side and API development with Node.js, Express and Nest on the back-end side. In addition to knowledge in SQL databases such as MySQL, PostgreSQL, SQLite and SQLServer and noSQL such as MongoDB.
+                    I am a passionate Full-Stack Web Developer with 2
+                    years of hands-on experience in crafting
+                    high-performance web applications.
+                    My expertise spans both front-end and back-end
+                    technologies, allowing me to deliver comprehensive
+                    solutions. I'm constantly learning and adapting to new
+                    technologies, with a particular interest in cloud
+                    services and containerization using AWS and Docker.
+
                     </p>
                </div>
                <div className='divImagePerfil'>
@@ -27,7 +35,7 @@ const AboutMe = () => {
                               <input id="myEmail" ref={textRef} value="ang02aezs@gmail.com" readOnly />
                               <FontAwesomeIcon icon={faClone} className="emailIcon" title="Copy Email" />               
                          </label>
-                         <a href="https://drive.google.com/file/d/1znQ28FvEEsW8KRVQ97XHCiCcScM0HAI8/view?usp=sharing" target="_blank" title="Look CV">
+                         <a href="https://drive.google.com/file/d/15c4kwYBJ4dqQHh3RdeEEY_Ohxavqt6iG/view?usp=sharing" target="_blank" title="Look CV">
                          <button>See CV</button>
                          </a>
                     </div>

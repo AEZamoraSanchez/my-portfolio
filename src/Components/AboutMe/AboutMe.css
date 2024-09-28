@@ -5,7 +5,7 @@
      @media (min-width: 900px) {
      grid-template-columns: 1fr 350px;
      width: 90%;
-     padding: 20px 0;
+     padding-top: 20px;
 }
 /* @media (min-width: 1250px) {
           grid-template-columns: 1fr minmax(350px, 440px);
@@ -20,9 +20,9 @@
      /* justify-content: center; */
      flex-direction: column;
 
-     /* @media (min-width: 900px) {
-          padding: 0px;
-     } */
+     @media (min-width: 900px) {
+          justify-content: center;
+     }
 
 }
 .divDescription h1 {
@@ -31,7 +31,7 @@
      color: rgb(241, 221, 255);
 
      @media( min-width: 900px ) {
-          font-size: 45px;
+          font-size: 46px;
      }
 }
 
@@ -41,7 +41,12 @@
      color: rgb(200, 132, 248);
 
      @media( min-width: 900px ) {
-          font-size: 30px;
+          font-size: 34px;
+          margin: 10px 0;
+     }
+     @media( min-width: 120px ) {
+          /* font-size: 36px; */
+          margin: 13px 0;
      }
 
 }

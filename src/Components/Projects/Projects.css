@@ -10,9 +10,9 @@
           width: 90%;
      }
 
-     @media ( min-width: 1250px ) {
+     /* @media ( min-width: 1250px ) {
           padding-top: 45px;
-     }
+     } */
 }
 
 .sectionProjectsH {
