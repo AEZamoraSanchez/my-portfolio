@@ -192,6 +192,56 @@ export const projects1 : Project[] = [
           ],
           github: 'https://github.com/AEZamoraSanchez/lockers-front',
           deployed: 'https://lockers-front.vercel.app/'
+     },
+     {
+          id: 4,
+          name: 'Appointment registration ',
+          description: 'Web application using Angular, Java/Spring and PostgreSQL in which you can register doctors, offices and appointments for patients.',
+          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png',
+          images: [
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720072026/Screenshot_6_f2yvo7.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070807/Screenshot_2_bjgmnt.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070874/Screenshot_3_rpam1b.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070903/Screenshot_4_txlcve.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070961/Screenshot_5_rhmvjh.png', 
+          ], 
+          tecnologies: [
+               {
+                    name: 'HTML',
+                    class: tecnologiesIKnow.html.class
+               },
+               {
+                    name: 'CSS',
+                    class: tecnologiesIKnow.css.class
+               },
+               {
+                    name: 'TypeScript',
+                    class: tecnologiesIKnow.typeScript.class
+               },
+               {
+                    name: 'Angular',
+                    class: tecnologiesIKnow.angular.class
+               },
+               {
+                    name: 'Rx',
+                    class: tecnologiesIKnow.rxjs.class
+               },
+               {
+                    name: 'Java',
+                    class: tecnologiesIKnow.java.class
+               },
+               {
+                    name: 'Spring',
+                    class: tecnologiesIKnow.spring.class
+               },
+               {
+                    name: 'PostgreSQL',
+                    class: tecnologiesIKnow.postgresql.class
+               }
+          ],
+          github: 'https://github.com/AEZamoraSanchez/Consultorio-back.git',
+          deployed: 'https://consultorio-front.vercel.app/'
      }
 ]
 

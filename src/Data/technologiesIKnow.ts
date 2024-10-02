@@ -19,5 +19,8 @@ export const tecnologiesIKnow = {
      mongodb: { name: "MongoDB", class: "devicon-mongodb-plain-wordmark" },
      rxjs : { name: "Rxjs", class: "devicon-rxjs-plain" },
      mysql : { name: "MySQL", class: "devicon-mysql-original" },
-     nest: { name: "Nest", class: "devicon-nestjs-plain"}
+     nest: { name: "Nest", class: "devicon-nestjs-plain"},
+     java : { name: "Java", class: "devicon-java-plain"},
+     spring : { name: "Spring", class: "devicon-spring-original"},
+
 }
