@@ -197,14 +197,13 @@ export const projects1 : Project[] = [
           id: 4,
           name: 'Appointment registration ',
           description: 'Web application using Angular, Java/Spring and PostgreSQL in which you can register doctors, offices and appointments for patients.',
-          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png',
+          imageMain: 'https://res.cloudinary.com/dhs2okdae/image/upload/v1727912166/nkzvzg6z23l9ge2pt5xj.png',
           images: [
-               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070721/Screenshot_1_uddl0n.png', 
-               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720072026/Screenshot_6_f2yvo7.png', 
-               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070807/Screenshot_2_bjgmnt.png',
-               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070874/Screenshot_3_rpam1b.png',
-               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070903/Screenshot_4_txlcve.png',
-               'https://res.cloudinary.com/dhs2okdae/image/upload/v1720070961/Screenshot_5_rhmvjh.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1727912166/nkzvzg6z23l9ge2pt5xj.png', 
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1727912166/bp6v1hhwxbyya80ipoez.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1727912166/gkbbni8wyzzhkgoea1te.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1727912166/pgd2t7xi1v7qzuypi7lk.png',
+               'https://res.cloudinary.com/dhs2okdae/image/upload/v1727912444/cf0yvcn4pnokq46xfmnv.png', 
           ], 
           tecnologies: [
                {
