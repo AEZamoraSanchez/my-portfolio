@@ -1,111 +1,46 @@
-/* .footerSection {
-     position: fixed;
-     bottom: 0;
-     right: 0;
+ footer {
+     
      width: 100%;
      display: flex;
-     justify-content: end;     
+     background-color: rgb(106, 50, 141);
+     padding: 20px;
+     justify-content: center;
+     gap: 50px;
 }
 
-.footerSection section {
+footer section a {
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     height: fit-content;
+     color: aliceblue;
+}
+
+footer section {
      display: flex;
      flex-direction: column;
-     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(95, 33, 134), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(106, 50, 141), rgb(95, 33, 134), rgba(0, 0, 0, 0));
-     gap: 5px;
-     padding-left: 15px;
-     transition-duration: .9s;
 }
 
-.footerSectionOpenClose {
-     border-radius: 100%;
-     width: fit-content;
-     position: absolute;
-     left: -40px;
-     top: 50%; 
-     transform: translateY(-50%);
-     font-size: 35px;
-     color: rgb(241, 221, 255);
-     cursor: pointer;
-
-     @media (min-width: 540px) {
-          font-size: 40px;
-          left: -50px;
-     }
-
-
-     @media (min-width: 768px) {
-          font-size: 50px;
-          left: -60px;
-     }
-
-
-}
-
-.redirect-links {
+footer section div {
      display: flex;
      gap: 10px;
-     justify-content: end;
-     padding: 0px 15px;
-     align-content: center;
-     
 
-     @media (min-width: 550px) {
-          gap: 10px;
+     & p {
+          margin: 0;
      }
 }
 
-
-.footerSection a:hover {
-     transform: scale(1.1);
-     cursor: pointer;
-     transition-duration: 1s;
-}
-
-.footerSection a {
-     text-decoration: none;
-     height: fit-content;
-}
-
-.emailIcon {
-     font-size: 20px;
-     color: white;
-     transition-duration: .5s;
-     cursor: pointer;
-     
-     @media (min-width: 550px) {
-          font-size: 30px;
-     }
-     
-     @media (min-width: 1200px) {
-          font-size: 35px;
-     }
-}
-
-.fileIcon {
-     font-size: 33px;
-     color: white;
-     transition-duration: .5s;
-     
-     @media (min-width: 550px) {
-          font-size: 42px;
-     }
-     
-     @media (min-width: 900px) {
-          font-size: 47px;
-     }
-     
-}
-
-.footerSection i {
+footer section i {
      font-size: 35px;
      color: white;
      transition-duration: .5s;
 
-     @media (min-width: 550px) {
-          font-size: 45px;
-     }
 
      @media (min-width: 900px) {
-          font-size: 50px;
+          font-size: 35px;
      }
-} */
+
+     &:hover{
+          scale: 1.3;
+     }
+}

@@ -1,7 +1,7 @@
 import './App.css'
 import Nav from './ViewComponents/Nav/Nav'
 import Content from './ViewComponents/Content/Content'
-// import Footer from './ViewComponents/Footer/Footer'
+import Footer from './ViewComponents/Footer/Footer'
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <main className='mainContentMajor'>
         <Content/> 
       </main>
-      {/* <Footer/>      */}
+      <Footer/>     
     </>
   )
 }

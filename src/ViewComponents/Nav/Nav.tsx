@@ -3,7 +3,6 @@ import './Nav.css'
 import { useState } from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 type BlockPosition = 'start' | 'center' | 'end'
 
 const Nav = () => {
@@ -21,7 +20,7 @@ const Nav = () => {
 
      return (
                <nav id='nav' className='navBarScroll'>
-                              <img className='logoImage' onClick={ () => scrollToComponent('aboutMe', 'center')} src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" />
+                              <img className='logoImage' onClick={ () => scrollToComponent('aboutMe', 'center')} src="https://w7.pngwing.com/pngs/1008/532/png-transparent-wolf-logo-symbol-thumbnail.png" alt="" title='home'/>
                          <div className='iconsDiv'>
                               <a href="https://www.linkedin.com/in/angel-eduardo-zamora-sanchez-64b84226b/" target="_blank" title="LinkedIn">
                               <i className="devicon-linkedin-plain"></i>
@@ -44,6 +43,7 @@ const Nav = () => {
                          }
 
                               <div className='sectionLinks900'>
+                              
                                    <button onClick={ () => scrollToComponent('projects', 'center')}>Projects</button>
                                         
                                    <button onClick={ () => scrollToComponent('workExperience', 'center')}>Experience</button>     

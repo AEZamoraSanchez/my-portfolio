@@ -81,13 +81,13 @@ const InfiniteCarousel = () => {
                          </div>
                     ))}
                     {projects1.map((project, index) => (
-                         <div onClick={() => handleOpenModal(index)} key={`image-${index + project.images.length}`} className="divSlideCarousel" >
+                         <div onClick={() => handleOpenModal(index)} key={`image2-${index}`} className="divSlideCarousel" >
                               <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
                               <h2 className='divSlideCarouselH'>{ project.name }</h2>
                          </div>
                     ))} 
                     {projects1.map((project, index) => (
-                         <div onClick={() => handleOpenModal(index)} key={`image-${index + project.images.length}`} className="divSlideCarousel" >
+                         <div onClick={() => handleOpenModal(index)} key={`image3-${index}`} className="divSlideCarousel" >
                               <img className='divSlideCarouselImage' src={project.imageMain} alt="" />
                               <h2 className='divSlideCarouselH'>{ project.name }</h2>
                          </div>
